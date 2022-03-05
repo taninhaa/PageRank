@@ -9,8 +9,16 @@ class arete():
         self.sommet2=sommet2
 
 class graph():
-    def __init__(self,nb_arete,nb_sommet):
+    def __init__(self,nb_arete,nb_sommet,liste_sommet_adjacent):
         self.nb_arete=nb_arete
         self.nb_sommet=nb_sommet
-        self.dict_adress={}
+        self.dict_address={sommet:liste_sommet_adjacent}
+
+
+
+"""
+def power_iteration(graphique):
+    for sommet in graphique.dict_address:
+
+        dict[sommet]"""
 
