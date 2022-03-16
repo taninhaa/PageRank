@@ -5,15 +5,14 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 wiki_wiki = wikipediaapi.Wikipedia('en')
- 
 
 # Dictionnaire d'identifients
 dico_nom_id, dico_id_nom = dict(), dict()
 page_debut = 'Python_(programming_language)'
 dico_nom_id[page_debut] = 0
 dico_id_nom[0] = page_debut
-with open("titres.txt") as file:
-	file.write("%d\t%")
+with open("titres.txt", "a") as file:
+	file.write("%d\t%s\n"%(0,page_debut))
 
 # Queue pour parcourir le graphe
 liste_pages = deque([dico_nom_id[page_debut]])  #Création d'une liste d'identifiants 
@@ -39,7 +38,8 @@ while compteur < 10:
 			new_id = len(dico_nom_id)  #On l'identifie 
 			dico_nom_id[p] = new_id 
 			dico_id_nom[new_id] = p
-		
+			with open("titres.txt", "a") as file:
+				file.write("%d\t%s\n"%(new_id,p))
 	
 		graphe[page_id].add( dico_nom_id[p] ) #On ajoute tous les voisins de l'identifiant dans le graphe
 		
@@ -47,6 +47,7 @@ while compteur < 10:
 			#On indique qu'on le visite 
 			liste_pages.append( dico_nom_id[p] )
 			visited.add( dico_nom_id[p] )
+			
 
 """	
 for noeud in graphe:
