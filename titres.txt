@@ -1,0 +1,2490 @@
+0	Python_(programming_language)
+1	"Hello, World!" program
+2	3ds Max
+3	?:
+4	ABC (programming language)
+5	ADMB
+6	ALGOL
+7	ALGOL 68
+8	APL (programming language)
+9	Abaqus
+10	Academic Free License
+11	Academic conference
+12	Action selection
+13	Activation function
+14	Ada (programming language)
+15	Advanced Simulation Library
+16	Adversarial machine learning
+17	AlexNet
+18	Alex Graves (computer scientist)
+19	Alex Martelli
+20	Algebra
+21	AlphaFold
+22	AlphaGo
+23	AlphaZero
+24	Alternative terms for free software
+25	Amazon (company)
+26	AmigaOS 4
+27	Amoeba (operating system)
+28	Anaconda (installer)
+29	Analyse-it
+30	Andrew Ng
+31	Anonymous function
+32	Apache Groovy
+33	Apache License
+34	Apache web server
+35	Aphorism
+36	Apple M1
+37	Apple Public Source License
+38	ArXiv (identifier)
+39	Arbitrary-precision arithmetic
+40	ArcGIS
+41	Arithmetic operations
+42	Array index
+43	Array slicing
+44	Artificial intelligence
+45	Artificial neural network
+46	Artistic License
+47	Aspect-oriented programming
+48	Assembly language
+49	Assertion (programming)
+50	Assignment (computer science)
+51	Associative array
+52	Astropy
+53	Asynchronous Server Gateway Interface
+54	Attention (machine learning)
+55	Autodesk Softimage
+56	Automatic differentiation
+57	Automation
+58	BASIC
+59	BERT (language model)
+60	BMDP
+61	BSD licenses
+62	BV4.1 (software)
+63	Backporting
+64	Backpropagation
+65	Backward compatibility
+66	Batch normalization
+67	Bazel (software)
+68	Beerware
+69	Benevolent dictator for life
+70	Beta release
+71	Bibcode (identifier)
+72	Biopython
+73	Blender (software)
+74	Block (programming)
+75	Boo (programming language)
+76	Boolean value
+77	Bottle (web framework)
+78	Break statement
+79	Bug tracker
+80	Byte
+81	Bytecode
+82	C++
+83	C11 (C standard revision)
+84	C89 (C version)
+85	C99
+86	CCP Games
+87	CERN
+88	CLPython
+89	CLU (programming language)
+90	COBOL
+91	CPython
+92	CSPro
+93	C (programming language)
+94	C Sharp (programming language)
+95	Cable theory
+96	Cache poisoning
+97	Calculus
+98	Call stack
+99	Capella (notation program)
+100	Centrum Wiskunde & Informatica
+101	Chapel (programming language)
+102	CherryPy
+103	Chris Lattner
+104	Cinema 4D
+105	CircuitPython
+106	CiteSeerX (identifier)
+107	Class (computer science)
+108	Cluster analysis
+109	Cobra (programming language)
+110	Code readability
+111	CoffeeScript
+112	Combinatorics
+113	Command line interpreter
+114	Commercial software
+115	Common Development and Distribution License
+116	Common Language Runtime
+117	Common Lisp
+118	Community of practice
+119	Comparison of free and open-source software licences
+120	Comparison of free geophysics software
+121	Comparison of free software for audio
+122	Comparison of integrated development environments
+123	Comparison of numerical-analysis software
+124	Comparison of open-source and closed-source software
+125	Comparison of open-source configuration management software
+126	Comparison of open-source operating systems
+127	Comparison of open-source programming language licensing
+128	Comparison of open-source wireless drivers
+129	Comparison of programming languages
+130	Comparison of shopping cart software
+131	Comparison of source-code-hosting facilities
+132	Comparison of statistical packages
+133	Compile time
+134	Complex number
+135	Computational learning theory
+136	Computational science
+137	Computer algebra system
+138	Computer file
+139	Computer networking
+140	Computer vision
+141	Concatenation
+142	Conditional (programming)
+143	Contributor License Agreement
+144	Convolution
+145	Copyleft
+146	Coroutine
+147	Creative Commons license
+148	Cross-platform software
+149	CubicWeb
+150	CumFreq
+151	Curly bracket programming language
+152	Cycle detection
+153	Cython
+154	DADiSP
+155	DALL-E
+156	DAP (software)
+157	D (programming language)
+158	Data Desk
+159	Data analytics
+160	Data augmentation
+161	Data mapper pattern
+162	Data type
+163	Databases
+164	Dataplot
+165	David Silver (computer scientist)
+166	Debian Free Software Guidelines
+167	Decimal floating point
+168	DeepMind
+169	Deep learning
+170	Definition of Free Cultural Works
+171	Demis Hassabis
+172	Design by contract
+173	Device Driver
+174	Differentiable function
+175	Differentiable neural computer
+176	Differentiable programming
+177	Digital image processing
+178	Digital rights management
+179	Dispose pattern
+180	Django (web framework)
+181	Documentation
+182	Doi (identifier)
+183	Double-precision floating-point format
+184	Doxygen
+185	Dropbox (service)
+186	Duck typing
+187	Dylan (programming language)
+188	Dynamic type
+189	Dynamic typing
+190	ECMAScript
+191	EViews
+192	Eclipse Public License
+193	Ellipsis (programming operator)
+194	End-of-life (product)
+195	Epi Info
+196	Eric Python IDE
+197	Erlang (programming language)
+198	Escape character
+199	Esri
+200	Euler (software)
+201	Exception handling
+202	Exception handling syntax
+203	Exponentiation
+204	Expression (computer science)
+205	Extensibility
+206	FEATool Multiphysics
+207	F Sharp (programming language)
+208	Facebook
+209	Facial recognition system
+210	Factorial
+211	FastAPI
+212	Fedora Linux
+213	Fei-Fei Li
+214	Fellow
+215	Filename extension
+216	Finite element method
+217	Firaxis Games
+218	First-class continuations
+219	Flask (web framework)
+220	Floating-point arithmetic
+221	Floor division
+222	Foobar
+223	Foreach
+224	Fork (software development)
+225	Forth (programming language)
+226	Fortran
+227	Fortress (programming language)
+228	Free-software license
+229	FreeBSD
+230	FreeCAD
+231	FreeFem++
+232	FreeMat
+233	Free Software Foundation
+234	Free Software Movement of India
+235	Free and open-source graphics device driver
+236	Free and open-source software
+237	Free license
+238	Free software
+239	Free software movement
+240	Freeware
+241	Function (computing)
+242	Function (programming)
+243	Functional programming
+244	GAUSS (software)
+245	GDScript
+246	GIMP
+247	GNU Debugger
+248	GNU General Public License
+249	GNU Lesser General Public License
+250	GNU Manifesto
+251	GNU Octave
+252	GPT-2
+253	GPT-3
+254	GTK
+255	Garbage collection (computer science)
+256	General-purpose programming language
+257	Generational list of programming languages
+258	Generator (computer programming)
+259	Generator (computer science)
+260	Genie (programming language)
+261	Genius (mathematics software)
+262	Genstat
+263	Gentoo Linux
+264	Geoffrey Hinton
+265	GitHub
+266	Global interpreter lock
+267	Gmsh
+268	Go (programming language)
+269	Godot (game engine)
+270	Google
+271	Google App Engine
+272	Google Brain
+273	Gradient descent
+274	Gradual typing
+275	GraphPad InStat
+276	GraphPad Prism
+277	Graphcore
+278	Graphical user interface
+279	Graphical user interfaces
+280	Graphviz
+281	Gratis versus libre
+282	Gretl
+283	Grok (web framework)
+284	Groovy (programming language)
+285	Guido van Rossum
+286	Half-open interval
+287	Handwriting recognition
+288	Hardware description language
+289	Hardware restriction
+290	Haskell (programming language)
+291	Here document
+292	High-level programming language
+293	History of Python
+294	History of free and open-source software
+295	History of programming languages
+296	Houdini (software)
+297	Human image synthesis
+298	Hypertext Transfer Protocol
+299	IDLE
+300	IDLE (Python)
+301	IEEE 754
+302	IPython
+303	ISBN (identifier)
+304	ISC license
+305	ITA Software
+306	Ian Goodfellow
+307	Icon (programming language)
+308	If-then-else
+309	Image processing
+310	Immutable
+311	Immutable object
+312	Imperative programming
+313	Include directive
+314	Industrial Light & Magic
+315	Infix notation
+316	InfoWorld
+317	Information security
+318	Inkscape
+319	Instagram
+320	Instance data
+321	Integer (computer science)
+322	Integrated development environment
+323	IronPython
+324	Iterator
+325	JASP
+326	JMP (statistical software)
+327	JMulTi
+328	JavaScript
+329	Java (programming language)
+330	Java (software platform)
+331	Jeff Dean (computer scientist)
+332	Julia (programming language)
+333	Just-in-time compilation
+334	Just another Gibbs sampler
+335	Jython
+336	Keras
+337	Kotlin (programming language)
+338	LIMDEP
+339	LISREL
+340	LLVM
+341	LabVIEW
+342	Lambda (programming)
+343	Language binding
+344	Language construct
+345	Late binding
+346	Lazy evaluation
+347	Lego Mindstorms EV3
+348	LibreOffice
+349	License proliferation
+350	Lightwave
+351	Linux
+352	Linux distribution
+353	Lisp (programming language)
+354	List (computer science)
+355	List comprehension
+356	List comprehensions
+357	List of Python software
+358	List of commercial open-source applications and services
+359	List of formerly open-source software
+360	List of formerly proprietary software
+361	List of free-software events
+362	List of free and open-source Android applications
+363	List of free and open-source iOS applications
+364	List of free and open-source software organizations
+365	List of free and open-source software packages
+366	List of free and open-source web applications
+367	List of free software project directories
+368	List of free television software
+369	List of integrated development environments for Python
+370	List of numerical-analysis software
+371	List of office suites
+372	List of open-source bioinformatics software
+373	List of open-source codecs
+374	List of open-source health software
+375	List of open-source routing platforms
+376	List of open-source software for mathematics
+377	List of open-source video games
+378	List of programming languages
+379	List of programming languages by type
+380	List of statistical software
+381	List of trademarked open-source software
+382	Lock (computer science)
+383	Logic programming
+384	Long-term support
+385	Loss functions for classification
+386	Lua (programming language)
+387	MATLAB
+388	MFEM
+389	MIME
+390	MIT Computer Science and Artificial Intelligence Laboratory
+391	MIT License
+392	ML (programming language)
+393	MLwiN
+394	MacOS
+395	Machine learning
+396	Maple (software)
+397	Mathcad
+398	Mathematics
+399	Matplotlib
+400	Matrix multiplication
+401	Maya (software)
+402	MedCalc
+403	Memory management
+404	Memristor
+405	Mercurial
+406	Metaclass
+407	Metaobject
+408	Metaprogramming
+409	Metasyntactic variable
+410	Method (computing)
+411	Method (programming)
+412	MicroPython
+413	Microcontroller
+414	Microfit
+415	Microsoft Excel
+416	Microsoft Open Specification Promise
+417	Microsoft Windows
+418	Microthread
+419	Mila (research institute)
+420	Minitab
+421	Mobile app
+422	Mod wsgi
+423	Modo (software)
+424	Modula-3
+425	Modular programming
+426	Modulo operation
+427	Monty Python
+428	MotionBuilder
+429	Mozilla Public License
+430	Mozilla software rebranded by Debian
+431	MuZero
+432	Multi-paradigm programming language
+433	Multimedia
+434	Musical notation
+435	MyHDL
+436	N900
+437	NASA
+438	NCSS (statistical software)
+439	NOP (code)
+440	Nagare (web framework)
+441	Name resolution (programming languages)
+442	Natural language processing
+443	Neologism
+444	NetBSD
+445	Netherlands
+446	Neural Turing machine
+447	Neural machine translation
+448	Neuromorphic engineering
+449	Nevow
+450	Nim (programming language)
+451	Ninja-IDE
+452	Nokia
+453	Non-English-based programming languages
+454	Norman Jouppi
+455	Notebook interface
+456	Nuitka
+457	Nuke (software)
+458	Null pointer
+459	NumPy
+460	Numba
+461	Number theory
+462	Numerical mathematics
+463	O'Reilly Media
+464	O'Reilly Open Source Convention
+465	OS/2
+466	Object-oriented programming
+467	Object (computer science)
+468	Object language
+469	Objective-C
+470	Off-side rule
+471	One Laptop per Child
+472	Open-core model
+473	Open-source-software movement
+474	Open-source hardware
+475	Open-source license
+476	Open-source software
+477	Open-source software development
+478	Open-source software security
+479	OpenAI
+480	OpenAI Five
+481	OpenBSD
+482	OpenBUGS
+483	OpenCV
+484	OpenFOAM
+485	OpenVMS
+486	Operating system
+487	Operator overloading
+488	Optical character recognition
+489	Oracle Corporation
+490	Orange (software)
+491	Order of operations
+492	Outline of free software
+493	Overfitting
+494	OxMetrics
+495	PHP
+496	PSPP
+497	Package management system
+498	Paint Shop Pro
+499	Pascal (programming language)
+500	Pattern matching
+501	Pattern recognition
+502	Pdoc
+503	Perl
+504	Permissive software license
+505	Peter Norvig
+506	Pip (package manager)
+507	Pointer (computer programming)
+508	Portage (software)
+509	Ported
+510	Premature optimization
+511	Prettyprint
+512	Printf format string
+513	Procedural programming
+514	Programmers
+515	Programming language
+516	Programming language implementation
+517	Programming paradigm
+518	Project Debater
+519	Project Jupyter
+520	Prolog
+521	Proprietary device driver
+522	Proprietary firmware
+523	Proprietary software
+524	Pseudorandom number generator
+525	Psyco
+526	Public-domain software
+527	Public domain
+528	PyCharm
+529	PyCon
+530	PyDev
+531	PyGTK
+532	PyMC3
+533	PyPy
+534	PyQt
+535	PyS60
+536	PyTorch
+537	Pydoc
+538	Pygame
+539	Pyjs
+540	Pyladies
+541	Pylons (web framework)
+542	Pylons project
+543	Pyramid (web framework)
+544	Pyrex (programming language)
+545	PythonAnywhere
+546	Python Conference
+547	Python License
+548	Python Package Index
+549	Python Software Foundation
+550	Python Software Foundation License
+551	Python for S60
+552	Python syntax and semantics
+553	Q-learning
+554	Qt (software)
+555	Quixote (web framework)
+556	RATS (software)
+557	RExcel
+558	RPython
+559	RStudio
+560	R (programming language)
+561	Raspberry Pi
+562	Rational number
+563	Raw string
+564	Read–eval–print loop
+565	Rectifier (neural networks)
+566	Red Hat Linux
+567	Reddit
+568	Reference counting
+569	Reference implementation
+570	Reflection (computer science)
+571	Reflective programming
+572	Regression analysis
+573	Regular expression
+574	Regularization (mathematics)
+575	Relational database
+576	Remote code execution
+577	Resource acquisition is initialization
+578	Revolution Analytics
+579	Revolution OS
+580	Ring-lang
+581	Ring (programming language)
+582	Robot control
+583	Round to even
+584	Rounding
+585	Roundup (issue tracker)
+586	Ruby (programming language)
+587	Run-time algorithm specialization
+588	Rust (programming language)
+589	S-PLUS
+590	S2CID (identifier)
+591	SAS (software)
+592	SCO–Linux disputes
+593	SETL
+594	SHAZAM (software)
+595	SOFA Statistics
+596	SPSS
+597	SPSS Modeler
+598	SQL
+599	SQLAlchemy
+600	SUDAAN
+601	SUDOC (identifier)
+602	SYSTAT (software)
+603	SageMath
+604	Salome (software)
+605	Scheme (programming language)
+606	SciPy
+607	ScicosLab
+608	Scientific computing
+609	Scikit-learn
+610	Scilab
+611	Scorewriter
+612	Scribus
+613	Scripting language
+614	SegReg
+615	Self-driving car
+616	Self-hosting (web services)
+617	Series 60
+618	Set (computer science)
+619	Shallow copy
+620	Shared Source Initiative
+621	Shed Skin
+622	Shell script
+623	SigmaStat
+624	Sigmoid function
+625	SimFiT
+626	Simple DirectMedia Layer
+627	Simula
+628	Single-board computer
+629	Sleepycat License
+630	Smalltalk
+631	SmartPLS
+632	Softmax function
+633	Software design
+634	Software developer
+635	Software license
+636	Software patents and free software
+637	Software release life cycle
+638	Solaris (operating system)
+639	Source-available software
+640	Spam (Monty Python)
+641	Speakeasy (computational environment)
+642	Speech recognition
+643	Speech synthesis
+644	Sphinx (documentation generator)
+645	SpiNNaker
+646	Spotify
+647	Stack Overflow
+648	Stackless Python
+649	Stan (software)
+650	Standard ML
+651	Standard library
+652	StatView
+653	StatXact
+654	Stata
+655	Statement (computer science)
+656	State–action–reward–state–action
+657	Statically-typed
+658	Statistica
+659	StatsDirect
+660	Statsmodels
+661	Stochastic gradient descent
+662	String (computer science)
+663	String interpolation
+664	String literal
+665	Strong and weak typing
+666	Structured programming
+667	Stuart J. Russell
+668	Sugar (software)
+669	Sugar Labs
+670	Swift (programming language)
+671	Symbian
+672	Syntactic sugar
+673	Syntax highlighting
+674	System administration
+675	TACTIC (web framework)
+676	TIOBE Programming Community Index
+677	TSP (econometrics software)
+678	Tail call
+679	Tcl
+680	TensorFlow
+681	Tensor Processing Unit
+682	Tensor calculus
+683	Test framework
+684	Test suite
+685	Text processing
+686	The C Programming Language
+687	The Cathedral and the Bazaar
+688	The Computer Language Benchmarks Game
+689	The Document Foundation
+690	The Free Software Definition
+691	The Open Source Definition
+692	The Unscrambler
+693	Theano (software)
+694	There is more than one way to do it
+695	This (computer programming)
+696	Timeline of free and open-source software
+697	Timeline of programming languages
+698	Tornado (web server)
+699	Training, validation, and test sets
+700	Transformer (machine learning model)
+701	Transpile
+702	Trusted Computing
+703	Tuple
+704	TurboGears
+705	Twisted (software)
+706	Type system
+707	Ubiquity (software)
+708	Ubuntu (operating system)
+709	Unary operation
+710	Unicode
+711	Unistat
+712	Unit test
+713	Unit testing
+714	Unix-like
+715	Unix shell
+716	Unladen Swallow
+717	Unlicense
+718	VHDL
+719	Verilog
+720	Viral license
+721	Virtual machine
+722	VisSim
+723	Vision processing unit
+724	WTFPL
+725	Watson (computer)
+726	WaveNet
+727	Wayback Machine
+728	Web2py
+729	Web Server Gateway Interface
+730	Web application
+731	Web browser
+732	Web framework
+733	Web scraping
+734	Webware for Python
+735	Weka (machine learning)
+736	While loop
+737	Whitespace character
+738	Wikipedia
+739	WinBUGS
+740	Windows
+741	Windows 7
+742	Windows XP
+743	Wolfram Mathematica
+744	Word2vec
+745	World Programming System
+746	X-12-ARIMA
+747	X10 (programming language)
+748	XLfit
+749	XLispStat
+750	XploRe
+751	Yahoo!
+752	Yann LeCun
+753	Yoshua Bengio
+754	Yukihiro Matsumoto
+755	Zen of Python
+756	Zero-based numbering
+757	Zlib License
+758	Zope
+759	Wikipedia:Good articles
+760	Wikipedia:Wikimedia sister projects
+761	Template:Cite web
+762	Template:Differentiable computing
+763	Template:FOSS
+764	Template:Latest preview software release/Python (programming language)
+765	Template:Latest stable software release/Python (programming language)
+766	Template:Numerical analysis software
+767	Template:Programming languages
+768	Template:Python (programming language)
+769	Template:Python web frameworks
+770	Template:Statistical software
+771	Template talk:Differentiable computing
+772	Template talk:FOSS
+773	Template talk:Numerical analysis software
+774	Template talk:Programming languages
+775	Template talk:Python (programming language)
+776	Template talk:Python web frameworks
+777	Template talk:Statistical software
+778	Help:Authority control
+779	Category:Articles containing potentially dated statements from October 2021
+780	Category:Articles containing potentially dated statements from September 2021
+781	Category:Articles with BNF identifiers
+782	Category:Articles with FAST identifiers
+783	Category:Articles with GND identifiers
+784	Category:Articles with J9U identifiers
+785	Category:Articles with LCCN identifiers
+786	Category:Articles with SUDOC identifiers
+787	Category:Artificial neural networks
+788	Category:CS1 maint: archived copy as title
+789	Category:Free software
+790	Category:Machine learning
+791	Category:Programming languages
+792	Category:Python (programming language) web frameworks
+793	Category:Statistical software
+794	Category:Use dmy dates from November 2021
+795	Portal:Computer programming
+796	Portal:Free and open-source software
+797	Portal:Technology
+798	.deb
+799	1951 USAF resolution test chart
+800	3D computer graphics
+801	99 Bottles of Beer
+802	ASCII
+803	Acid3
+804	Application programming interface
+805	BCPL
+806	B (programming language)
+807	Bad Apple!!
+808	Ballerina (programming language)
+809	Bash (Unix shell)
+810	Batch file
+811	Bell Labs
+812	Brian Kernighan
+813	Brian W. Kernighan
+814	Calgary corpus
+815	Canterbury corpus
+816	Catchphrase
+817	Chinese room
+818	Clojure
+819	Complex programmable logic device
+820	Computer
+821	Computer graphics
+822	Computer language
+823	Cornell box
+824	Dart (programming language)
+825	Data compression
+826	Debian
+827	Dennis M. Ritchie
+828	EICAR test file
+829	ETP-1
+830	EURion constellation
+831	Elixir (programming language)
+832	Embedded system
+833	Englewood Cliffs, NJ
+834	Entry point
+835	Esoteric programming language
+836	Ezhil (programming language)
+837	Field-programmable gate arrays
+838	Film leader
+839	GNU
+840	GNU Hello
+841	GTUBE
+842	Go programming language
+843	Hamburgevons
+844	Harvard sentences
+845	Hello World
+846	Hello World (disambiguation)
+847	ImageNet
+848	Indian-head test pattern
+849	Input/output
+850	Jargon File
+851	Java BluePrints
+852	Just another Perl hacker
+853	Lenna
+854	Library (computing)
+855	Light-emitting diode
+856	Light Emitting Diode
+857	Light painting
+858	List of BBC test cards
+859	List of basic computer science topics
+860	List of datasets for machine-learning research
+861	Logo (programming language)
+862	Lorem ipsum
+863	Low-level programming language
+864	MNIST database
+865	Malbolge
+866	Man or boy test
+867	Martin Richards (computer scientist)
+868	Newline
+869	OCaml
+870	Package manager
+871	Packt Publishing Ltd
+872	Pangram
+873	Parameter (computer programming)
+874	Philips
+875	Philips PM5540
+876	Philips PM5544
+877	PlayStation Portable homebrew
+878	PowerShell
+879	Prentice Hall
+880	Princeton University
+881	Principle of good enough
+882	Python (programming language)
+883	Quine (computing)
+884	Rosetta Code
+885	SMPTE color bars
+886	Sanity check
+887	Sanity test
+888	Scalable vector graphics
+889	Shakedown (testing)
+890	Side effect (computer science)
+891	Source code
+892	Standard streams
+893	Standard test image
+894	Stanford bunny
+895	Stanford dragon
+896	Subroutine
+897	Sun Microsystems
+898	Syntax
+899	TI-BASIC
+900	TPK algorithm
+901	TVE test card
+902	Telefunken FuBK
+903	Test Card F
+904	Test Card G
+905	Test Card W
+906	Test Card X
+907	Test card
+908	The C Programming Language (book)
+909	The North Wind and the Sun
+910	The quick brown fox jumps over the lazy dog
+911	Tom's Diner
+912	Trabb Pardo-Knuth algorithm
+913	Turing test
+914	Typography
+915	UEIT - Universal Electronic Test Chart
+916	University of Cambridge
+917	Utah teapot
+918	Webdriver Torso
+919	William B. Williams (DJ)
+920	XL (programming language)
+921	Zig (programming language)
+922	Wikipedia:Protection policy
+923	Template:Standard test item
+924	Template talk:Standard test item
+925	.3ds
+926	2012 (film)
+927	3D-Coat
+928	3D animations
+929	3D computer game
+930	3D computer graphics software
+931	3D models
+932	3D rendering
+933	AC3D
+934	ACIS
+935	Adobe After Effects
+936	Amapi
+937	Ambient occlusion
+938	Architectural visualization
+939	Arion (software)
+940	Arnold (software)
+941	AutoCAD
+942	AutoQ3D Community
+943	AutoShade
+944	AutoSketch
+945	Autodesk
+946	Autodesk 123D
+947	Autodesk Alias
+948	Autodesk Animator
+949	Autodesk Arnold
+950	Autodesk Combustion
+951	Autodesk Flame
+952	Autodesk Flare
+953	Autodesk Gameware
+954	Autodesk Inventor
+955	Autodesk Lustre
+956	Autodesk Maya
+957	Autodesk Media and Entertainment
+958	Autodesk MotionBuilder
+959	Autodesk Mudbox
+960	Autodesk Revit
+961	Autodesk Smoke
+962	Autodesk Toxik
+963	Autodesk Vault
+964	Avatar (2009 film)
+965	Aviary (application suite)
+966	Avid DS
+967	Avid Elastic Reality
+968	Avid Matador
+969	Avid Media Illusion
+970	Bevel
+971	Bitsquid
+972	Blackmagic Fusion
+973	Box
+974	Brazil R/S
+975	Bryce (software)
+976	Bucket rendering
+977	C3D Toolkit
+978	CUDA
+979	Carrara (software)
+980	Cinelerra
+981	Cineon
+982	Clara.io
+983	Closed-source
+984	Cloth simulation
+985	CloudCompare
+986	Combustion (software)
+987	Commotion (animation)
+988	CompTime
+989	Comparison of 3D computer graphics software
+990	Computer animation
+991	Computing platform
+992	Concept art
+993	Cone (geometry)
+994	Copy protection
+995	Curlie
+996	Cyber Studio
+997	Cylinder (geometry)
+998	DOS extender
+999	DWG
+1000	Daz Studio
+1001	Digital compositing
+1002	Discreet Frost
+1003	Discreet GMax
+1004	Discreet Plasma
+1005	Dongle
+1006	Dynamation (software)
+1007	Dynamic simulation
+1008	E-on Vue
+1009	Electric Image Animation System
+1010	Element 3D
+1011	Extrude
+1012	FIRST
+1013	FXhome Limited
+1014	Gary Yost
+1015	GigaMesh Software Framework
+1016	Global illumination
+1017	Golaem Crowd
+1018	HOOPS 3D Graphics System
+1019	Hexagon (software)
+1020	IA-32
+1021	Icon (computing)
+1022	Imagine (3D modeling software)
+1023	Imagine Media
+1024	Indigo Renderer
+1025	Industrial Light & Magic's proprietary Saber
+1026	IntelliCAD
+1027	Inverse kinematics
+1028	Kdenlive
+1029	Kerkythea
+1030	KernelCAD
+1031	Kynapse
+1032	LightWave 3D
+1033	Lightscape
+1034	Lightwave 3D
+1035	List of 3D computer graphics software
+1036	List of 3D modeling software
+1037	List of 3D rendering software
+1038	List of films made with Autodesk 3ds Max
+1039	LuxCoreRender
+1040	Luxrender
+1041	MASSIVE (software)
+1042	MS-DOS
+1043	MakeHuman
+1044	Matchmover
+1045	Maxwell Render
+1046	Media Cleaner
+1047	Mental Ray
+1048	MeshLab
+1049	Messiah (software)
+1050	Metaballs
+1051	Motion (software)
+1052	N-World
+1053	NURBS
+1054	NURMS
+1055	Natron (software)
+1056	Navisworks
+1057	Next Generation (magazine)
+1058	Normal mapping
+1059	Octane Render
+1060	Olive (software)
+1061	OpenFX (software)
+1062	OpenSCAD
+1063	OpenShot
+1064	Open Cascade Technology
+1065	POV-Ray
+1066	Paint 3D
+1067	Parasolid
+1068	Particle systems
+1069	Physically based rendering
+1070	Piranha (compositing software)
+1071	Pixar
+1072	Pixar RenderMan
+1073	Plane (mathematics)
+1074	Plug-in (computing)
+1075	Point Cloud Library
+1076	Polygon modeling
+1077	Polyhedron
+1078	Poser (software)
+1079	PowerAnimator
+1080	Previsualization
+1081	Previsualization documents
+1082	Prism (optics)
+1083	Programmer
+1084	Pyramid
+1085	Radiosity (3D computer graphics)
+1086	Ray tracing (graphics)
+1087	Rectangular prism
+1088	Remo 3D
+1089	RenderMan Interface Specification
+1090	Rhinoceros 3D
+1091	Romulus (modelling kernel)
+1092	Russian Geometric Kernel
+1093	Scaleform GFx
+1094	Scanline rendering
+1095	Sculpt 3D
+1096	Sculptris
+1097	Seamless3d
+1098	Secondary education
+1099	Shade 3D
+1100	Shaders
+1101	Shake (software)
+1102	ShapeManager
+1103	Shark 3D
+1104	ShotGrid
+1105	Shotcut
+1106	SilhouetteFX
+1107	Silicon Grail
+1108	Silo (software)
+1109	Skeletal animation
+1110	SketchBook Pro
+1111	SketchUp
+1112	Softimage 3D
+1113	Software as a service
+1114	Software categories
+1115	Special effect
+1116	Sphere
+1117	Spindle (textiles)
+1118	StrataVision 3D
+1119	Strata 3D
+1120	Subsurface scattering
+1121	Swift 3D
+1122	TV Commercial
+1123	Teigha
+1124	Terragen
+1125	Tertiary education
+1126	Tinkercad
+1127	Torus
+1128	Torus knot
+1129	Trialware
+1130	TrueSpace
+1131	TurboSilver
+1132	Unbiased rendering
+1133	User interface
+1134	V-Ray
+1135	Vertex painting
+1136	Video game developer
+1137	Video games
+1138	VistaPro
+1139	Walk Cycle
+1140	Weight map
+1141	Windows 10
+1142	Windows 11
+1143	Windows 2000
+1144	Windows 8
+1145	Windows 8.1
+1146	Windows 95
+1147	Windows 98
+1148	Windows ME
+1149	Windows NT 3.51
+1150	Windows NT 4.0
+1151	Windows Vista
+1152	Wings 3D
+1153	X64
+1154	X86
+1155	X86-64
+1156	YafaRay
+1157	ZBrush
+1158	Wikipedia:Avoid weasel words
+1159	Wikipedia:Citation needed
+1160	Template:3D software
+1161	Template:Autodesk products
+1162	Template:Compositing Software
+1163	Template:Latest preview software release/Autodesk 3ds Max
+1164	Template:Latest stable software release/Autodesk 3ds Max
+1165	Template talk:3D software
+1166	Template talk:Autodesk products
+1167	Template talk:Compositing Software
+1168	Category:3D graphics software
+1169	Category:Articles with specifically marked weasel-worded phrases from December 2017
+1170	Category:Articles with unsourced statements from June 2008
+1171	Category:Use mdy dates from September 2018
+1172	Arithmetic promotion
+1173	Assignment (programming)
+1174	Binary operator
+1175	Block scope
+1176	Boolean
+1177	Boolean expression
+1178	Brian d foy
+1179	CFML
+1180	CPL (programming language)
+1181	C preprocessor
+1182	Christopher Strachey
+1183	Comma operator
+1184	Compile-time error
+1185	Computer programming
+1186	Conditioned disjunction
+1187	Const (computer programming)
+1188	Constant (computer programming)
+1189	Crystal (programming language)
+1190	Currying
+1191	Double precision
+1192	Elvis operator
+1193	Evaluation strategy
+1194	Expression-oriented programming language
+1195	Expression (programming)
+1196	FreeMarker
+1197	Fundamental Concepts in Programming Languages
+1198	Futures and promises
+1199	GNU Project
+1200	Higher-Order and Symbolic Computation
+1201	IIf
+1202	Initialization (programming)
+1203	Larry Wall
+1204	Lucee
+1205	Microsoft Foundation Classes
+1206	Null coalescing operator
+1207	Numeric type
+1208	Object Pascal
+1209	Operator associativity
+1210	Operator precedence
+1211	PL/SQL
+1212	Programming Perl
+1213	Question mark
+1214	Railo
+1215	Raku (programming language)
+1216	Right associative
+1217	S (programming language)
+1218	Short-circuit evaluation
+1219	Single assignment
+1220	Statement (programming)
+1221	Switch statement
+1222	Ternary operator
+1223	Tom Christiansen
+1224	Type hierarchy
+1225	Type qualifier
+1226	Type unification
+1227	Undefined behavior
+1228	Undefined behaviour
+1229	Value (computer science)
+1230	Variadic function
+1231	Visual Basic
+1232	Visual Basic .NET
+1233	Void type
+1234	Win32
+1235	XProfan
+1236	AWK
+1237	Atari
+1238	Atari TOS
+1239	Compiler
+1240	DOS
+1241	File system
+1242	Indent style
+1243	Infinite precision arithmetic
+1244	Interpreter (computer software)
+1245	Lambert Meertens
+1246	Monolithic application
+1247	Polymorphism (computer science)
+1248	Static variable
+1249	Steven Pemberton
+1250	Structure editor
+1251	Top-down programming
+1252	Unix
+1253	Template:Latest preview software release/ABC
+1254	Template:Latest stable software release/ABC
+1255	Category:Articles containing potentially dated statements from 2020
+1256	BSD
+1257	Bayesian probability
+1258	Comparison of numerical analysis software
+1259	Cross-platform
+1260	David Fournier
+1261	Fisheries
+1262	Free and open source software
+1263	Hessian matrix
+1264	List of numerical analysis software
+1265	List of statistical packages
+1266	Mac OS X
+1267	Markov chain Monte Carlo
+1268	New BSD License
+1269	Non-linear
+1270	OpenSolaris
+1271	Partial derivative
+1272	Random effects model
+1273	Statistical model
+1274	Stock assessment
+1275	Template:Latest preview software release/ADMB
+1276	Template:Latest stable software release/ADMB
+1277	ABC ALGOL
+1278	ALCOR
+1279	ALGAMS
+1280	ALGO
+1281	ALGOL/ZAM
+1282	ALGOL 58
+1283	ALGOL 60
+1284	ALGOL 68-R
+1285	ALGOL 68C
+1286	ALGOL 68RS
+1287	ALGOL 68S
+1288	ALGOL Bulletin
+1289	ALGOL N
+1290	ALGOL W
+1291	ALGOL X
+1292	Address programming language
+1293	Adriaan van Wijngaarden
+1294	Alan Perlis
+1295	Alfred V. Aho
+1296	Algol (disambiguation)
+1297	Algol 60
+1298	Algorithm
+1299	Andrey Ershov
+1300	Archive-It
+1301	Association for Computing Machinery
+1302	Atlas Autocode
+1303	Automatic Computing Engine
+1304	BESM
+1305	BSI Group
+1306	Backus–Naur form
+1307	Barry J. Mailloux
+1308	Bernard Vauquois
+1309	Boolean data type
+1310	Brian Randell
+1311	Buran programme
+1312	Burroughs Corporation
+1313	Burroughs MCP
+1314	Burroughs large systems
+1315	C. A. R. Hoare
+1316	Call-by-name
+1317	Call-by-reference
+1318	Call-by-value
+1319	Carroll Morgan (computer scientist)
+1320	Case ALGOL
+1321	Case Western Reserve University
+1322	Charles H. Lindsey
+1323	Charles Katz
+1324	Comecon
+1325	Communications of the ACM
+1326	Computer History Museum
+1327	Computing (journal)
+1328	Conor McBride
+1329	Context-free grammar
+1330	Coral 66
+1331	Cornelis H. A. Koster
+1332	Cyrillic
+1333	DASK
+1334	DG/L
+1335	Dartmouth ALGOL 30
+1336	Data General Eclipse
+1337	David Gries
+1338	David Turner (computer scientist)
+1339	Dialect (computing)
+1340	Donald Knuth
+1341	Douglas T. Ross
+1342	Dragon Book (computer science)
+1343	ELLA (programming language)
+1344	ES EVM
+1345	ETH Zurich
+1346	Edinburgh IMP
+1347	Edsger W. Dijkstra
+1348	Eiiti Wada
+1349	Electrologica X1
+1350	Elliott 803
+1351	Elliott ALGOL
+1352	Elliott Brothers (computer company)
+1353	English Electric
+1354	English Electric DEUCE
+1355	English Electric KDF9
+1356	Eric Hehner
+1357	Executive Systems Problem Oriented Language
+1358	F. G. Duncan
+1359	FLACC
+1360	FORTRAN
+1361	Ferranti Pegasus
+1362	Font
+1363	Formal grammar
+1364	Formalism (philosophy of mathematics)
+1365	Friedrich L. Bauer
+1366	GOGOL
+1367	GOST
+1368	GOST 10859
+1369	Gesellschaft für Angewandte Mathematik und Mechanik
+1370	Hal Abelson
+1371	Heinz Rutishauser
+1372	Hello world program
+1373	Hermann Bottenbruch
+1374	High level language
+1375	I/O
+1376	IBM 2741
+1377	IBM Selectric typewriter
+1378	IBM System/360
+1379	ICT 1900 series
+1380	IFIP
+1381	IFIP Working Group 2.1
+1382	IMP (programming language)
+1383	ISSN (identifier)
+1384	ISWIM
+1385	International Federation for Information Processing
+1386	Interval arithmetic
+1387	JOVIAL
+1388	Jacob T. Schwartz
+1389	Java virtual machine
+1390	Jeffrey Ullman
+1391	Jensen's Device
+1392	Jensen's device
+1393	Jeremy Gibbons
+1394	John Backus
+1395	John Barnes (computer scientist)
+1396	John C. Reynolds
+1397	John E. L. Peck
+1398	John McCarthy (computer scientist)
+1399	Joseph Henry Wegstein
+1400	Jules Schwartz
+1401	Julien Green (computer scientist)
+1402	Jørn Jensen
+1403	Kidsgrove Algol
+1404	Klaus Samelson
+1405	Konrad Zuse
+1406	Kristen Nygaard
+1407	L. Petrone
+1408	LGP-30
+1409	Lambda calculus
+1410	Lexical scope
+1411	MALGOL
+1412	META II
+1413	Manchester University
+1414	Mary (programming language)
+1415	Massachusetts Institute of Technology
+1416	Maurice Nivat
+1417	Micha Sharir
+1418	Michael Guy
+1419	Michael Woodger
+1420	Michel Sintzoff
+1421	Mike Woodger
+1422	Minsk family of computers
+1423	NELIAC
+1424	NEWP
+1425	NU ALGOL
+1426	Napier88
+1427	Nested function
+1428	Niklaus Wirth
+1429	Nobuo Yoneda
+1430	Ole-Johan Dahl
+1431	PDP-1
+1432	PDP-11
+1433	PL/I
+1434	PS-algol
+1435	Parameter (computer science)
+1436	Peter Landin
+1437	Peter Naur
+1438	Peter O'Hearn
+1439	Philip Woodward
+1440	Printer (computing)
+1441	Professional association
+1442	Programming Computable Functions
+1443	RTL/2
+1444	Ravi Sethi
+1445	Recursion (computer science)
+1446	RegneCentralen ALGOL
+1447	Regnecentralen
+1448	Richard Bird (computer scientist)
+1449	Robert Dewar
+1450	Robert W. Floyd
+1451	Roland Carl Backhouse
+1452	Ron Morrison
+1453	Royal Radar Establishment
+1454	S-algol
+1455	SMALL
+1456	SMIL (computer)
+1457	Scope (computer science)
+1458	Single quotation mark
+1459	Soviet Union
+1460	Specials (Unicode block)
+1461	Static type
+1462	Stephen R. Bourne
+1463	Stropping (programming)
+1464	Susan G. Bond
+1465	Syntax (programming languages)
+1466	Table (information)
+1467	Technical standard
+1468	The Computer Journal
+1469	Thomas Eugene Kurtz
+1470	Thunk
+1471	Tom Maibaum
+1472	Tony Brooker
+1473	Tony Hoare
+1474	Triplex-ALGOL Karlsruhe
+1475	Triplex number
+1476	Tron (video game)
+1477	Turing Award
+1478	UNIVAC
+1479	UNIVAC 1107
+1480	USS 90 Algol
+1481	Unisys
+1482	United States Department of Defense
+1483	University of Edinburgh
+1484	University of St Andrews
+1485	VALGOL
+1486	Val Schorre
+1487	Van Wijngaarden grammar
+1488	Whetstone (benchmark)
+1489	Willem van der Poel
+1490	William M. McKeeman
+1491	Z22 (computer)
+1492	Z23 (computer)
+1493	ZAM (computer)
+1494	ZEBRA (computer)
+1495	\
+1496	‘
+1497	Wikipedia:Link rot
+1498	Template:ALGOL programming
+1499	Template:Cite book
+1500	Template:Latest preview software release/ALGOL
+1501	Template:Latest stable software release/ALGOL
+1502	Template talk:ALGOL programming
+1503	Help:IPA/English
+1504	Category:ALGOL 60
+1505	Category:Algol programming language family
+1506	Category:Articles with BNE identifiers
+1507	Category:Articles with dead external links from March 2021
+1508	Category:CS1 maint: location
+1509	Category:Use dmy dates from February 2020
+1510	ACM Press
+1511	ALGOL 68-RT
+1512	ALGOL Y
+1513	Acorn Archimedes
+1514	Activation record
+1515	Algol H
+1516	Andrew Birrell
+1517	Andrew S. Tanenbaum
+1518	Array data structure
+1519	Atari ST
+1520	BLISS
+1521	Banff, Alberta
+1522	Barry James Mailloux
+1523	Barry Mailloux
+1524	Bourne shell
+1525	Braille
+1526	Bulgarian language
+1527	C.A.R. Hoare
+1528	C.mmp
+1529	CAMAC-IML
+1530	CMS-2
+1531	CS-4 (programming language)
+1532	Call by reference
+1533	Cambridge CAP computer
+1534	Cambridge University
+1535	Camel case (programming)
+1536	Carnegie Mellon University
+1537	Character encoding
+1538	Charles Hodgson Lindsey
+1539	Chinese language
+1540	Comparison of ALGOL 68 and C++
+1541	Compiler Description Language
+1542	Computer Conservation Society
+1543	Computer science
+1544	Concurrent programming language
+1545	Control Data
+1546	Copyright law of the Soviet Union
+1547	Cornelis Hermanus Antonius Koster
+1548	Crown Copyright
+1549	DEC PDP-11
+1550	Dangling else
+1551	Dartmouth Time Sharing System
+1552	Dennis Ritchie
+1553	Directive (programming)
+1554	ECL programming language
+1555	EPOS ALGOL
+1556	EPSILON (programming language)
+1557	Edsger Dijkstra
+1558	Elbrus (computer)
+1559	Euclid (programming language)
+1560	Euler programming language
+1561	Expression-oriented programming languages
+1562	Flex machine
+1563	For loop
+1564	Fortran 66
+1565	Fraser Duncan
+1566	French language
+1567	GEORGE (operating system)
+1568	GPLv3
+1569	Generalized ALGOL
+1570	Gerhard Seegmüller
+1571	German language
+1572	Go Programming Language
+1573	Guarded Command Language
+1574	HAL/S
+1575	Hans Bekic
+1576	History of Programming Languages
+1577	IBM
+1578	IBM 1130
+1579	IBM PC
+1580	ICL 2900 Series
+1581	ICL Series 39
+1582	ICL VME
+1583	ISO/IEC JTC1
+1584	Implicit type conversion
+1585	Incremental compilation
+1586	Integer overflow
+1587	Interactive ALGOL 68
+1588	International Computers Limited
+1589	Jack N. Merner
+1590	Jan Garwick
+1591	Japanese language
+1592	John Edward Lancelot Peck
+1593	Kootwijk
+1594	KornShell
+1595	LIS (programming language)
+1596	Lambert Guillaume Louis Théodore Meertens
+1597	Leeds University
+1598	Leningrad ALGOL 68
+1599	Lightweight markup language
+1600	List of binary codes
+1601	M-220
+1602	Manfred Paul
+1603	Mathematisch Centrum
+1604	Michael Guy (computer scientist)
+1605	Multics
+1606	NAG Numerical Libraries
+1607	Namespace
+1608	North Berwick
+1609	Numerical analysis
+1610	OCLC (identifier)
+1611	OREGANO
+1612	Oak Ridge National Laboratory
+1613	Odra (computer)
+1614	Oklahoma State University
+1615	Operator (programming)
+1616	Orthogonality
+1617	Overloading (programming)
+1618	PAS 1 (programming language)
+1619	PDL/2
+1620	PEARL (programming language)
+1621	PL/1
+1622	PROCOL
+1623	Parallel computing
+1624	Peter Zilahy Ingerman
+1625	Pointer (computer science)
+1626	Prime number
+1627	RAF Strike Command
+1628	RISC OS
+1629	RSRE
+1630	RS Algol
+1631	Real-time computing
+1632	Recursive data type
+1633	Richard G. Fisker
+1634	Royal Signals and Radar Establishment
+1635	Russian language
+1636	S3 (programming language)
+1637	SPARC
+1638	Seed7
+1639	Semaphore (programming)
+1640	Shareware
+1641	Sic
+1642	Sieve of Eratosthenes
+1643	Six-bit character code
+1644	Software library
+1645	Springer-Verlag
+1646	Steelman language requirements
+1647	Steve Bourne
+1648	Strong typing
+1649	Structural type system
+1650	Sun-3
+1651	SunOS
+1652	System/370
+1653	TACPOL
+1654	TACPOL (programming language)
+1655	Technical University of Berlin
+1656	Telefunken
+1657	Tirrenia
+1658	Type introspection
+1659	UCLA
+1660	UNESCO
+1661	Ultrix-32
+1662	United Kingdom
+1663	United modes
+1664	University of Illinois
+1665	University of Virginia
+1666	VAX
+1667	VAX-11
+1668	Warsaw
+1669	Władysław M. Turski
+1670	Z80
+1671	Zandvoort
+1672	Zurich
+1673	Wikipedia:Bare URLs
+1674	Template:Cite journal
+1675	Template:Latest preview software release/ALGOL 68
+1676	Template:Latest stable software release/ALGOL 68
+1677	Help:CS1 errors
+1678	Category:Articles with bare URLs for citations from March 2022
+1679	Category:Articles with dead external links from February 2020
+1680	Category:Articles with dead external links from June 2017
+1681	Category:Articles with dead external links from November 2016
+1682	Category:Articles with dead external links from October 2016
+1683	Category:Articles with unsourced statements from August 2011
+1684	Category:CS1 maint: DOI inactive as of February 2022
+1685	Category:Use dmy dates from May 2019
+1686	.NET Framework
+1687	110 film
+1688	126 film
+1689	135 film
+1690	19-inch rack
+1691	A+ (programming language)
+1692	A440 (pitch standard)
+1693	AES3
+1694	AES47
+1695	ANSI C
+1696	ANSI escape code
+1697	APLX
+1698	APL (codepage)
+1699	APL syntax and symbols
+1700	ASMO 449
+1701	Accuracy and precision
+1702	Ada Semantic Interface Specification
+1703	Adin Falkoff
+1704	Advanced Video Coding
+1705	American National Standards Institute
+1706	Antimagnetic watch
+1707	Antonín Svoboda (computer scientist)
+1708	ArmSCII
+1709	Array data type
+1710	Array programming
+1711	Arthur Whitney (computer scientist)
+1712	Asilomar Conference Grounds
+1713	Asset management
+1714	Backronym
+1715	Battery nomenclature
+1716	Big O notation
+1717	Binary operation
+1718	Blue Mountain Lake (hamlet), New York
+1719	British Standard Pipe
+1720	Burroughs B5000
+1721	Business Process Model and Notation
+1722	Byte (magazine)
+1723	CHILL
+1724	CICS
+1725	COLLADA
+1726	Calculation
+1727	California
+1728	Character set
+1729	Charles Brenner (mathematician)
+1730	Cloud Infrastructure Management Interface
+1731	Commodore SuperPET
+1732	Common Criteria
+1733	Common Language Infrastructure
+1734	Common Logic
+1735	Common Object Request Broker Architecture
+1736	Common subexpression elimination
+1737	Compact Disc Digital Audio
+1738	Comparative Tracking Index
+1739	CompuServe
+1740	Compute!
+1741	Computer Graphics Metafile
+1742	Computer keyboard
+1743	Computer monitor
+1744	Computer programmer
+1745	Computer terminal
+1746	Computerworld
+1747	Constant folding
+1748	Control Data Corporation
+1749	Control flow
+1750	Conversational Monitor System
+1751	Conway's Game of Life
+1752	Coordinate vector
+1753	Cross platform
+1754	Cygwin
+1755	DNA profiling
+1756	Data General
+1757	Data parallelism
+1758	Data scientist
+1759	Declaration (computer programming)
+1760	Delivery Multimedia Integration Framework
+1761	Digital Addressable Lighting Interface
+1762	Digital Effects
+1763	Digital Effects (studio)
+1764	Digital Equipment Corporation
+1765	Digital encoding of APL symbols
+1766	Digital object identifier
+1767	Digraph (computing)
+1768	Direct function
+1769	Document Style Semantics and Specification Language
+1770	Domain expert
+1771	Duplex (telecommunications)
+1772	Dyadics
+1773	ELI (programming language)
+1774	EN 62262
+1775	EXPRESS (data modeling language)
+1776	E (mathematical constant)
+1777	E series of preferred numbers
+1778	Edward H. Sussenguth
+1779	Edward H. Sussenguth Jr.
+1780	Envelope
+1781	Epsilon
+1782	Equal-loudness contour
+1783	Eugene McDonnell
+1784	FDI World Dental Federation notation
+1785	FORTRAN IV
+1786	FP (programming language)
+1787	FTAM
+1788	Fiber Distributed Data Interface
+1789	Fieldbus
+1790	File Allocation Table
+1791	Film speed
+1792	Financial software
+1793	Finland
+1794	Firmware
+1795	Flowchart
+1796	France
+1797	Fred Brooks
+1798	Free Software Directory
+1799	Fuel oil
+1800	GNU Public License
+1801	Garland STPM Press
+1802	Germany
+1803	Grace Murray Hopper Award
+1804	Graphical Kernel System
+1805	Guidelines for the Definition of Managed Objects
+1806	HTML
+1807	Harris Corporation
+1808	Harvard University
+1809	Health care
+1810	Hello, world
+1811	Hewlett-Packard
+1812	Higher-order function
+1813	Hole punch
+1814	Homebrew Computer Club
+1815	Honeywell CP-6
+1816	Horsepower
+1817	I. P. Sharp Associates
+1818	IATF 16949
+1819	IBM 1050
+1820	IBM 1620
+1821	IBM 4300
+1822	IBM 5100
+1823	IBM 7090
+1824	IBM 7090/94 IBSYS
+1825	IBM AIX
+1826	IBM Selectric
+1827	IBM System/360 Model 50
+1828	IBM System/370
+1829	IBM Systems Journal
+1830	IBM Type-III Library
+1831	IEC 60027
+1832	IEC 60034
+1833	IEC 60038
+1834	IEC 60068 - Environmental testing
+1835	IEC 60228
+1836	IEC 60269
+1837	IEC 60309
+1838	IEC 60320
+1839	IEC 60364
+1840	IEC 60446
+1841	IEC 60601
+1842	IEC 60870
+1843	IEC 60870-5
+1844	IEC 60870-6
+1845	IEC 60906-1
+1846	IEC 60929
+1847	IEC 61030
+1848	IEC 61131
+1849	IEC 61131-3
+1850	IEC 61162
+1851	IEC 61334
+1852	IEC 61355
+1853	IEC 61360
+1854	IEC 61400
+1855	IEC 61499
+1856	IEC 61508
+1857	IEC 61511
+1858	IEC 61850
+1859	IEC 61851
+1860	IEC 61883
+1861	IEC 61968
+1862	IEC 61970
+1863	IEC 62056
+1864	IEC 62061
+1865	IEC 62196
+1866	IEC 62264
+1867	IEC 62304
+1868	IEC 62325
+1869	IEC 62351
+1870	IEC 62366
+1871	IEC 62379
+1872	IEC 62455
+1873	IEC 62682
+1874	IEC 62700
+1875	IEC 63110
+1876	IEC 63119
+1877	IEC 63382
+1878	IEC 81346
+1879	IO-Link
+1880	IP-XACT
+1881	IP Sharp Associates
+1882	IS-IS
+1883	ISLISP
+1884	ISO-8859-8-I
+1885	ISO-TimeML
+1886	ISO/IEC 10021
+1887	ISO/IEC 10116
+1888	ISO/IEC 10967
+1889	ISO/IEC 11179
+1890	ISO/IEC 11404
+1891	ISO/IEC 11801
+1892	ISO/IEC 12207
+1893	ISO/IEC 14443
+1894	ISO/IEC 14651
+1895	ISO/IEC 15288
+1896	ISO/IEC 15504
+1897	ISO/IEC 15693
+1898	ISO/IEC 15897
+1899	ISO/IEC 17024
+1900	ISO/IEC 17025
+1901	ISO/IEC 18000
+1902	ISO/IEC 18014
+1903	ISO/IEC 19752
+1904	ISO/IEC 19770
+1905	ISO/IEC 19788
+1906	ISO/IEC 19794-5
+1907	ISO/IEC 20000
+1908	ISO/IEC 2022
+1909	ISO/IEC 21827
+1910	ISO/IEC 24727
+1911	ISO/IEC 24744
+1912	ISO/IEC 27000
+1913	ISO/IEC 27000-series
+1914	ISO/IEC 27001
+1915	ISO/IEC 27002
+1916	ISO/IEC 27005
+1917	ISO/IEC 27006
+1918	ISO/IEC 27040
+1919	ISO/IEC 29110
+1920	ISO/IEC 29119
+1921	ISO/IEC 33001
+1922	ISO/IEC 38500
+1923	ISO/IEC 42010
+1924	ISO/IEC 4909
+1925	ISO/IEC 5218
+1926	ISO/IEC 646
+1927	ISO/IEC 6523
+1928	ISO/IEC 7064
+1929	ISO/IEC 7810
+1930	ISO/IEC 7811
+1931	ISO/IEC 7812
+1932	ISO/IEC 7813
+1933	ISO/IEC 7816
+1934	ISO/IEC 80000
+1935	ISO/IEC 8652
+1936	ISO/IEC 8820-5
+1937	ISO/IEC 8859
+1938	ISO/IEC 8859-1
+1939	ISO/IEC 8859-10
+1940	ISO/IEC 8859-11
+1941	ISO/IEC 8859-12
+1942	ISO/IEC 8859-13
+1943	ISO/IEC 8859-14
+1944	ISO/IEC 8859-15
+1945	ISO/IEC 8859-16
+1946	ISO/IEC 8859-2
+1947	ISO/IEC 8859-3
+1948	ISO/IEC 8859-4
+1949	ISO/IEC 8859-5
+1950	ISO/IEC 8859-6
+1951	ISO/IEC 8859-7
+1952	ISO/IEC 8859-8
+1953	ISO/IEC 8859-9
+1954	ISO/IEC 9126
+1955	ISO/IEC 9529
+1956	ISO/IEC 9797-1
+1957	ISO/IEC 9995
+1958	ISO/IEC TR 12182
+1959	ISO/IEC base media file format
+1960	ISO/IEEE 11073
+1961	ISO/TR 11941
+1962	ISO 1
+1963	ISO 1000
+1964	ISO 10005
+1965	ISO 10006
+1966	ISO 10007
+1967	ISO 10160
+1968	ISO 10161
+1969	ISO 10206
+1970	ISO 10218
+1971	ISO 10303
+1972	ISO 10303-21
+1973	ISO 10303-22
+1974	ISO 10303-28
+1975	ISO 10487
+1976	ISO 10628
+1977	ISO 10962
+1978	ISO 11170
+1979	ISO 11783
+1980	ISO 11784 and ISO 11785
+1981	ISO 11898
+1982	ISO 11940
+1983	ISO 11940-2
+1984	ISO 11992
+1985	ISO 12006
+1986	ISO 12620
+1987	ISO 128
+1988	ISO 13399
+1989	ISO 13406-2
+1990	ISO 13485
+1991	ISO 13490
+1992	ISO 13567
+1993	ISO 13584
+1994	ISO 14000
+1995	ISO 14031
+1996	ISO 1413
+1997	ISO 14224
+1998	ISO 14617
+1999	ISO 14644
+2000	ISO 14698
+2001	ISO 14971
+2002	ISO 15022
+2003	ISO 15189
+2004	ISO 15292
+2005	ISO 15398
+2006	ISO 15686
+2007	ISO 15706-2
+2008	ISO 15919
+2009	ISO 15924
+2010	ISO 15926
+2011	ISO 15926 WIP
+2012	ISO 1629
+2013	ISO 16750
+2014	ISO 17100
+2015	ISO 1745
+2016	ISO 18245
+2017	ISO 19011
+2018	ISO 19092-1
+2019	ISO 19092-2
+2020	ISO 19114
+2021	ISO 19115
+2022	ISO 19136
+2023	ISO 19439
+2024	ISO 19600
+2025	ISO 2
+2026	ISO 20022
+2027	ISO 20121
+2028	ISO 2014
+2029	ISO 2015
+2030	ISO 2033
+2031	ISO 20400
+2032	ISO 2047
+2033	ISO 2145
+2034	ISO 2146
+2035	ISO 21500
+2036	ISO 216
+2037	ISO 217
+2038	ISO 22000
+2039	ISO 22300
+2040	ISO 22395
+2041	ISO 233
+2042	ISO 25178
+2043	ISO 259
+2044	ISO 25964
+2045	ISO 26000
+2046	ISO 26262
+2047	ISO 2709
+2048	ISO 2711
+2049	ISO 2788
+2050	ISO 28000
+2051	ISO 2848
+2052	ISO 2852
+2053	ISO 31
+2054	ISO 31-0
+2055	ISO 31-1
+2056	ISO 31-10
+2057	ISO 31-11
+2058	ISO 31-12
+2059	ISO 31-13
+2060	ISO 31-2
+2061	ISO 31-3
+2062	ISO 31-4
+2063	ISO 31-5
+2064	ISO 31-6
+2065	ISO 31-7
+2066	ISO 31-8
+2067	ISO 31-9
+2068	ISO 31000
+2069	ISO 3103
+2070	ISO 3166
+2071	ISO 3166-1
+2072	ISO 3166-2
+2073	ISO 3166-3
+2074	ISO 3307
+2075	ISO 361
+2076	ISO 37001
+2077	ISO 3864
+2078	ISO 3977
+2079	ISO 4
+2080	ISO 4031
+2081	ISO 4157
+2082	ISO 4165
+2083	ISO 4217
+2084	ISO 428
+2085	ISO 45001
+2086	ISO 5
+2087	ISO 50001
+2088	ISO 518
+2089	ISO 5426
+2090	ISO 5427
+2091	ISO 5428
+2092	ISO 55000
+2093	ISO 56000
+2094	ISO 5775
+2095	ISO 5776
+2096	ISO 5964
+2097	ISO 6344
+2098	ISO 6346
+2099	ISO 6385
+2100	ISO 639
+2101	ISO 639-1
+2102	ISO 639-2
+2103	ISO 639-3
+2104	ISO 639-5
+2105	ISO 639-6
+2106	ISO 6438
+2107	ISO 657
+2108	ISO 668
+2109	ISO 6709
+2110	ISO 690
+2111	ISO 6943
+2112	ISO 7001
+2113	ISO 7002
+2114	ISO 7010
+2115	ISO 7027
+2116	ISO 704
+2117	ISO 7200
+2118	ISO 732
+2119	ISO 7637
+2120	ISO 7736
+2121	ISO 8000
+2122	ISO 8178
+2123	ISO 8373
+2124	ISO 843
+2125	ISO 8501-1
+2126	ISO 8583
+2127	ISO 860
+2128	ISO 8601
+2129	ISO 8691
+2130	ISO 898
+2131	ISO 9
+2132	ISO 9000
+2133	ISO 9241
+2134	ISO 9362
+2135	ISO 9564
+2136	ISO 965
+2137	ISO 9660
+2138	ISO 9897
+2139	ISO 999
+2140	ISO metric screw thread
+2141	Image manipulation
+2142	Imperial College London
+2143	Input method editor
+2144	Insurance
+2145	Integer
+2146	Intel 8008
+2147	Intel 8080
+2148	International Bank Account Number
+2149	International Electrotechnical Commission
+2150	International Organization for Standardization
+2151	International Securities Identification Number
+2152	International Standard Atmosphere
+2153	International Standard Audiovisual Number
+2154	International Standard Book Number
+2155	International Standard Identifier for Libraries and Related Organizations
+2156	International Standard Music Number
+2157	International Standard Musical Work Code
+2158	International Standard Name Identifier
+2159	International Standard Recording Code
+2160	International Standard Serial Number
+2161	International Standard Text Code
+2162	Interpreted language
+2163	Investment management
+2164	Iota
+2165	Isofix
+2166	Iteration
+2167	Iverson Award
+2168	Iverson bracket
+2169	JBIG
+2170	JPEG 2000
+2171	JPEG XR
+2172	J (programming language)
+2173	Japan
+2174	Jim Brown (computer scientist)
+2175	John M. Scholes
+2176	John M. Scholes (computer scientist)
+2177	K (programming language)
+2178	Kappa number
+2179	Kdb+
+2180	Kenneth E. Iverson
+2181	Knowledge Discovery Metamodel
+2182	Kunrei-shiki romanization
+2183	Kx Systems
+2184	LCCN (identifier)
+2185	LYaPAS
+2186	Language Of Temporal Ordering Specification
+2187	Larry Breed
+2188	Lawrence M. Breed
+2189	Legal Entity Identifier
+2190	Lexical Markup Framework
+2191	Linguistic relativity
+2192	Linux Standard Base
+2193	List of IEC standards
+2194	List of ISO romanizations
+2195	List of International Electrotechnical Commission standards
+2196	List of International Organization for Standardization standards
+2197	Longitudinal redundancy check
+2198	Lottery
+2199	MCM/70
+2200	MHEG-5
+2201	MPEG-1
+2202	MPEG-2
+2203	MPEG-21
+2204	MPEG-4
+2205	MPEG-4 Part 11
+2206	MPEG-4 Part 14
+2207	MPEG-4 Part 2
+2208	MPEG-4 Part 3
+2209	MPEG-7
+2210	MPEG-A
+2211	MPEG-D
+2212	MPEG-H
+2213	MUSIC/SP
+2214	Machine code
+2215	Magnetic ink character recognition
+2216	Manufacturing Message Specification
+2217	Market Identifier Code
+2218	Massively parallel (computing)
+2219	Mathematica
+2220	Mathematical notation
+2221	MaxiCode
+2222	Memory management unit
+2223	Merchandising
+2224	Meta-Object Facility
+2225	Michael S. Montalbano
+2226	Microcomputer
+2227	Microsoft Corporation
+2228	Modifier key
+2229	Monad (functional programming)
+2230	Monterey
+2231	Motion JPEG 2000
+2232	Motorola 6800
+2233	Multibus
+2234	Multiplication table
+2235	Neural networks
+2236	Nial
+2237	O-ring
+2238	OCR-A
+2239	OCR-B
+2240	OP Financial Group
+2241	OSI model
+2242	Object Constraint Language
+2243	Office Open XML
+2244	On-board diagnostics
+2245	OpenDocument
+2246	Open Data Protocol
+2247	Open Document Architecture
+2248	Open Letter to Hobbyists
+2249	Open Virtualization Format
+2250	Orthogonal
+2251	Outer product
+2252	PC-based IBM-compatible mainframes
+2253	PC Magazine
+2254	PDF/A
+2255	PDF/E
+2256	PDF/UA
+2257	PDF/VT
+2258	PDF/X
+2259	PDF417
+2260	PHIGS
+2261	POSIX
+2262	Personal computer
+2263	Philip S. Abrams
+2264	Photographic Activity Test
+2265	Physics engine
+2266	Pinyin
+2267	Polymorphic Programming Language
+2268	Popular Science
+2269	Portable Document Format
+2270	Power take-off
+2271	Process Specification Language
+2272	Programming idiom
+2273	Programming language dialect
+2274	Prontor-Compur
+2275	Pseudo-random
+2276	QR code
+2277	Q (programming language from Kx Systems)
+2278	Quality function deployment
+2279	RELAX NG
+2280	RKM code
+2281	RM-ODP
+2282	Rank (J programming language)
+2283	Register machine
+2284	Remote job entry
+2285	Renard series
+2286	Requirements engineering
+2287	Richard H. Lathwell
+2288	Richard Stallman
+2289	Rob Pike
+2290	Robert Bernecky
+2291	Robert Spence (engineer)
+2292	Robotics
+2293	Rodnay Zaks
+2294	Roger Hui
+2295	Roger Moore (computer scientist)
+2296	Role-playing game
+2297	Romanization of Armenian
+2298	Romanization of Georgian
+2299	Row- and column-major order
+2300	Runtime library
+2301	SDMX
+2302	SIGPLAN
+2303	STEP-NC
+2304	STSC
+2305	Salt spray test
+2306	Science Research Associates
+2307	Scientific Time Sharing Corporation
+2308	Shared Variables
+2309	Shared variable
+2310	Sheffer stroke
+2311	Shoe size
+2312	Siemens
+2313	Simple feature access
+2314	Simulation video game
+2315	Single instruction, multiple data
+2316	Software maintenance
+2317	Software piracy
+2318	Soliton Incorporated
+2319	Sorting
+2320	Spreadsheet
+2321	Stack machine
+2322	Standard Generalized Markup Language
+2323	Standard deviation
+2324	Studentlitteratur
+2325	Sweden
+2326	Switzerland
+2327	Syracuse University
+2328	TIFF/EP
+2329	Telecommunication
+2330	The Computer Company
+2331	Thomas J. Watson Research Center
+2332	Tieto
+2333	Tilde
+2334	Time-sharing
+2335	Time (magazine)
+2336	Time Sharing Option
+2337	Topic map
+2338	Torx
+2339	Tron
+2340	Trusted Platform Module
+2341	UNIVAC 1100/2200 series
+2342	USB
+2343	Unified Modeling Language
+2344	United States
+2345	Universal Coded Character Set
+2346	Universal Disk Format
+2347	Universal Remote Console
+2348	Universal Time-Sharing System
+2349	University of Maryland, College Park
+2350	University of Waterloo
+2351	VSPC
+2352	Versatile Video Coding
+2353	Very-large-scale integration
+2354	Vicat softening point
+2355	VideoBrain Family Computer
+2356	Virtual Storage Personal Computing
+2357	Virtual memory
+2358	Water Resistant mark
+2359	Watsonville
+2360	Web Content Accessibility Guidelines
+2361	Whirlpool (hash function)
+2362	Wine (software)
+2363	Wolfram Language
+2364	Working group
+2365	X.500
+2366	X3D
+2367	XML Metadata Interchange
+2368	Xerox
+2369	Yorktown Heights
+2370	YouTube
+2371	Z notation
+2372	Wikipedia:Citing sources
+2373	Wikipedia:External links
+2374	Wikipedia:Manual of Style/Words to watch
+2375	Wikipedia:Please clarify
+2376	Wikipedia:What Wikipedia is not
+2377	Template:APL programming language
+2378	Template:ISO standards
+2379	Template:Latest preview software release/APL
+2380	Template:Latest stable software release/APL
+2381	Template:List of International Electrotechnical Commission standards
+2382	Template talk:APL programming language
+2383	Template talk:ISO standards
+2384	Template talk:List of International Electrotechnical Commission standards
+2385	Help:Maintenance template removal
+2386	Help:Special characters
+2387	Category:APL programming language family
+2388	Category:Articles containing potentially dated statements from 2018
+2389	Category:Articles with dead external links from April 2019
+2390	Category:Articles with dead external links from August 2019
+2391	Category:Articles with specifically marked weasel-worded phrases from March 2015
+2392	Category:Articles with unsourced statements from December 2019
+2393	Category:Articles with unsourced statements from February 2020
+2394	Category:Articles with unsourced statements from July 2015
+2395	Category:Articles with unsourced statements from May 2021
+2396	Category:Articles with unsourced statements from September 2020
+2397	Category:ISO standards
+2398	Category:Wikipedia articles needing clarification from June 2010
+2399	Category:Wikipedia external links cleanup from August 2020
+2400	Category:Wikipedia spam cleanup from August 2020
+2401	3dvia
+2402	ABAQUS, Inc
+2403	ADINA
+2404	AVL (engineering company)
+2405	Abacus
+2406	Accelrys
+2407	Actran
+2408	Aerospace
+2409	Altair Engineering
+2410	Ansys
+2411	Autodesk Simulation
+2412	Automotive industry
+2413	Bernard Charlès
+2414	CATIA
+2415	COMSOL Multiphysics
+2416	CONSELF
+2417	Calculix
+2418	Charles Edelstenne
+2419	Code Saturne
+2420	Computational electromagnetics
+2421	Computational fluid dynamics
+2422	Computer-Aided Engineering
+2423	Computer-aided engineering
+2424	Computer Simulation Technology
+2425	DELMIA
+2426	DIANA FEA
+2427	Dassault Group
+2428	Dassault Systemes
+2429	Dassault Systèmes
+2430	David Hibbitt
+2431	Deal.II
+2432	Dymola
+2433	Elastomer
+2434	Elmer FEM solver
+2435	Exalead
+2436	FEniCS Project
+2437	FORAN System
+2438	Femap
+2439	Finite Element Analysis
+2440	Finite element analysis
+2441	Fluent, Inc.
+2442	Forbes
+2443	Fox-toolkit
+2444	GEOVIA
+2445	GUI
+2446	Gerris (software)
+2447	GetFEM++
+2448	JCMsuite
+2449	JMAG
+2450	KIVA (software)
+2451	LS-DYNA
+2452	List of finite element software packages
+2453	M.I.T.
+2454	MOOSE (software)
+2455	MSC Adams
+2456	MSC Marc
+2457	Midas Civil
+2458	Multiphysics
+2459	Nastran
+2460	Netvibes
+2461	Onshape
+2462	PTC Creo
+2463	Piezoelectric
+2464	QBlade
+2465	RFEM
+2466	SESAM (FEM)
+2467	SIMULIA
+2468	Siemens NX
+2469	SimScale
+2470	Simcenter STAR-CCM+
+2471	Simulia (company)
+2472	Soft tissue
+2473	SolidWorks
+2474	Solidworks
+2475	Spatial Corp
+2476	Stanford University Unstructured
+2477	Virtools
+2478	Westinghouse Electric Corporation
+2479	Wikipedia:Verifiability
+2480	Template:CAE software
+2481	Template:Dassault Systèmes
+2482	Template:Latest preview software release/SIMULIA Abaqus FEA
+2483	Template:Latest stable software release/SIMULIA Abaqus FEA
+2484	Template talk:CAE software
+2485	Template talk:Dassault Systèmes
+2486	Help:Referencing for beginners
+2487	Category:Articles needing additional references from July 2010
+2488	Category:Articles with dead external links from January 2022
+2489	Category:Use dmy dates from November 2020
