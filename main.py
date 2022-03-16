@@ -5,7 +5,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 wiki_wiki = wikipediaapi.Wikipedia('en')
-
+ 
+ 
 # Dictionnaire d'identifients
 dico_nom_id, dico_id_nom = dict(), dict()
 page_debut = 'Python_(programming_language)'

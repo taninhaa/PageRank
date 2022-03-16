@@ -1,7 +1,7 @@
 import csv 
 
 """ Fonction qui permet de lire un fichier d'aretes et de créer le dictionnaire correspondant"""
-#Graphe
+#Graphe 
 def conversion_dict_fichier_graphe(fichier):
     graphe={}
 
