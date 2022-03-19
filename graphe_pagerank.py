@@ -1,8 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import wikipediaapi
-import scipy
+import scipy.sparse as sps
 import seaborn
+import csv
 
 
 # Power iteration avec la somme
@@ -16,10 +17,7 @@ def power_iteration(dict1,tab,alpha): # fonction qui va calculer la valeur d'une
         somme=0
         for cles2 in dict1: # on parcours tous les sommets de notre graphe
             if cles in dict1[cles2]: # si un sommet de notre premier parcours se trouve dans l'ensemble on va l'ajouter avec la formule
-                #print("sommet",cles2)
                 somme=somme+(tab[cles2]/len(dict1[cles2]))  
-                #print("valeur du page rank",tab[cles2-1])
-                #print("nombre d'arcs sortants",len(dict1[cles2]))
         page_rank_final[cles]=alpha*somme+constante
     return page_rank_final
 
@@ -39,7 +37,7 @@ def power_iteration_matrice(dict2,pi,alpha): # calcul de la valeur du page rank 
     return alpha*np.dot(pi,P)+constante
 
 #Power iteration avec sparse
-def dict_sparse(dict2):
+def dict_sparse(dict2): # retourne la matrice sparse
     data=[]
     row_ind=[]
     col_ind=[]
@@ -48,9 +46,30 @@ def dict_sparse(dict2):
             data.append(1/len(dict2[cle]))
             row_ind.append(cle)
             col_ind.append(sommet)
-    return scipy.sparse.csr_matrix((data,(row_ind,col_ind)),shape=(len(dict2),len(dict2)))
+    return sps.csr_matrix((data,(row_ind,col_ind)),shape=(len(dict2),len(dict2)))
 
-def dict_sparse2(dict2):
+def power_iteration_sparse(dict2,pi,alpha):
+    nb_sommet=len(dict2)
+    P=dict_sparse(dict2)
+    constante=((1-alpha)/nb_sommet)*np.ones(nb_sommet)
+    P_t=P.transpose()
+    pi_t=pi.transpose()
+    return (alpha*P_t.dot(pi_t)).transpose()+constante
+
+def power_iteration_sparse_erreur(dict2,pi,alpha,epsilon): # avec erreur
+    nb_sommet=len(dict2)
+    P=dict_sparse(dict2)
+    constante=((1-alpha)/nb_sommet)*np.ones(nb_sommet)
+    P_t=P.transpose()
+    page_rank=np.zeros((1,len(dict2)))
+    iteration=0
+    while(np.linalg.norm(page_rank-pi)>epsilon):
+        iteration=iteration+1
+        page_rank=pi
+        pi=(alpha*P_t.dot(page_rank.transpose())).transpose()+constante
+    return pi,iteration
+
+def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des éléments non nuls
     data=[]
     row_ind=[]
     col_ind=[]
@@ -59,4 +78,3 @@ def dict_sparse2(dict2):
             row_ind.append(cle)
             col_ind.append(sommet)
     return row_ind,col_ind
-
