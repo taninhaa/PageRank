@@ -97,3 +97,5 @@ def pagerank_sparse(rows, cols, alpha, epsilon,pi):
 		pi_t=page_rank_t
 		page_rank_t=alpha*P_t.dot(pi_t)+constante
 	return page_rank 
+
+
