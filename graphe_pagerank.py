@@ -78,3 +78,22 @@ def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des él
             row_ind.append(cle)
             col_ind.append(sommet)
     return row_ind,col_ind
+
+
+def pagerank_sparse(rows, cols, alpha, epsilon,pi):	
+	size = max(max(rows), max(cols)) + 1
+	A = sps.csr_matrix(([1]*len(rows), (rows, cols)), shape=(size,size))
+	A = A + sps.eye(size)
+	D = A.dot([1]*size)
+	Dinv = sps.diags([np.reciprocal(D)], [0])
+	P = Dinv.dot(A)
+
+	constante=(1-alpha)/size*np.ones(size)
+	P_t=P.transpose()
+	pi_t=pi.transpose()
+	page_rank=alpha*P_t.dot(pi_t).transpose()+constante
+	page_rank_t=page_rank.transpose()
+	while(np.linalg.norm(page_rank_t-pi_t)>epsilon):
+		pi_t=page_rank_t
+		page_rank_t=alpha*P_t.dot(pi_t)+constante
+	return page_rank 
