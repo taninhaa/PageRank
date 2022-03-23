@@ -15,8 +15,9 @@ def scraping(titre):
 	dico_nom_id[page_debut] = 0
 	dico_id_nom[0] = page_debut
 	
-	with open("titres.txt", "w") as file:
+	with open("titres2.txt", "w") as file:
 		file.write("%d\t%s\n"%(0,page_debut))
+
 
 	# Queue pour parcourir le graphe
 	liste_pages = deque([dico_nom_id[page_debut]])  #Création d'une liste d'identifiants 
@@ -43,7 +44,7 @@ def scraping(titre):
 				new_id = len(dico_nom_id)  #On l'identifie 
 				dico_nom_id[p] = new_id 
 				dico_id_nom[new_id] = p
-				with open("titres.txt", "a") as file:
+				with open("titres2.txt", "a") as file:
 					file.write("%d\t%s\n"%(new_id,p))
 		
 			graphe[page_id].add( dico_nom_id[p] ) #On ajoute tous les voisins de l'identifiant dans le graphe
@@ -52,6 +53,8 @@ def scraping(titre):
 				#On indique qu'on le visite 
 				liste_pages.append( dico_nom_id[p] )
 				visited.add( dico_nom_id[p] )
+			with open("aretes.txt", "a") as file1:
+				file1.write("%d\t%d\n"%(page_id, dico_nom_id[p]))
 				
 	return (graphe,len(dico_nom_id))
 
