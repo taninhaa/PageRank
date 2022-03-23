@@ -1,22 +1,22 @@
 import csv 
-
+import time
+import scipy
 """ Fonction qui permet de lire un fichier d'aretes et de créer le dictionnaire correspondant"""
 #Graphe 
 def conversion_dict_fichier_graphe(fichier):
-    graphe={}
-
+    lignes=[]
+    colonnes=[]
     with open(fichier, newline='') as csvfile:
-        spamreader=csv.reader(csvfile, delimiter=' ', quotechar='|')
-        for row in spamreader:
-            a=int(row[0])
-            b=int(row[1])
-            if a not in graphe:
-                graphe[a]= set()
-            if b not in graphe[a]:
-                graphe[a].add(b)
-    return graphe
+        
+        for row in csv.reader(csvfile, delimiter=' ', quotechar='|'):
+            lignes.append(row[0]) 
+            colonnes.append(row[1])
                 
 #Affiche le graphe
-graphe1=conversion_dict_fichier_graphe('bio-CE-CX.edges')
+t1 = time.time()
+conversion_dict_fichier_graphe('soc-buzznet.mtx')
+t2 = time.time()
+print(t2-t1)
+"""
 for i in graphe1.items():
-    print(i) 
+    print(i) """
