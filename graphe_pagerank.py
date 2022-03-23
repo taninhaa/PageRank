@@ -96,4 +96,4 @@ def pagerank_sparse(rows, cols, alpha, epsilon,pi):
 	while(np.linalg.norm(page_rank_t-pi_t)>epsilon):
 		pi_t=page_rank_t
 		page_rank_t=alpha*P_t.dot(pi_t)+constante
-	return page_rank
+	return page_rank 
