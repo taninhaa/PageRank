@@ -1,7 +1,10 @@
 import csv
 import time
 from graphe_pagerank import pagerank_sparse
+import sys
+
 def conversion_list_fichier_graphe(fichier):
+    print(fichier)
     ligne =[]
     colonne = []
     with open(fichier, newline='') as csvfile:
@@ -12,8 +15,9 @@ def conversion_list_fichier_graphe(fichier):
 
     return ligne,colonne
 
+fichier = sys.argv[1]
 t1 = time.time()
-(ligne,colonne) = conversion_list_fichier_graphe("graphe.txt")
+(ligne,colonne) = conversion_list_fichier_graphe(fichier)
 t2 = time.time()
 print(t2-t1)
 for i in range(5):
