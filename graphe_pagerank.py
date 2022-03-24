@@ -87,14 +87,12 @@ def pagerank_sparse(rows, cols, alpha, epsilon):
 	Dinv = sps.diags([np.reciprocal(D)], [0])
 	P = Dinv.dot(A)
 
-	pi=np.ones((1,max(max(rows), max(cols)) + 1))/(max(max(rows), max(cols)) + 1)
-	constante=(1-alpha)/size*np.ones(size)
-	P_t=P.transpose()
-	pi_t=pi.transpose()
-	page_rank=alpha*P_t.dot(pi_t).transpose()+constante
-	page_rank_t=page_rank.transpose()
-	print(page_rank_t)
-	while(np.linalg.norm(page_rank_t-pi_t)>epsilon):
-		pi_t=page_rank_t
-		page_rank_t=alpha*P_t.dot(pi_t)+constante
-	return page_rank
+	e=np.array([(1-alpha)/size]*size)
+	pi_avant=np.array(e)
+	pi=[0]*size
+	Pt=P.transpose()
+
+	while(np.linalg.norm(pi-pi_avant)>epsilon):
+		pi_avant=pi
+		pi=alpha*(Pt.dot(pi_avant))+e
+	return pi
