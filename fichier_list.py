@@ -13,7 +13,7 @@ def conversion_list_fichier_graphe(fichier):
     return ligne,colonne
 
 t1 = time.time()
-(ligne,colonne) = conversion_list_fichier_graphe("soc-buzznet.mtx")
+(ligne,colonne) = conversion_list_fichier_graphe("graphe.txt")
 t2 = time.time()
 print(t2-t1)
 for i in range(5):
