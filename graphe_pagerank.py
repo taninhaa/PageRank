@@ -13,7 +13,7 @@ def creation_p(dict2): # conversion de notre dictionnaire à la matrice de trans
             P[cle,sommet]=1/len(dict2[cle])
     return P
 
-def power_iteration_matrice_erreur(dict2,pi,alpha,epsilon): # calcul de la valeur du page rank de manière matricielle avec erreur epsilon
+def power_iteration_matrice_erreur(dict2,alpha,epsilon): # calcul de la valeur du page rank de manière matricielle avec erreur epsilon
     nb_sommet=len(dict2)
     P=creation_p(dict2)
     e=np.array([(1-alpha)/nb_sommet]*nb_sommet)
@@ -34,7 +34,7 @@ def reader_lists(fileName):
 			cols.append( int(line[1]) )
 
 		return rows, cols
-        
+
 def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des éléments non nuls
     data=[]
     row_ind=[]
