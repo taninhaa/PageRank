@@ -15,7 +15,7 @@ def scraping(titre):
 	dico_nom_id[page_debut] = 0
 	dico_id_nom[0] = page_debut
 	
-	with open("titres2.txt", "w") as file:
+	with open("id-titre.txt", "w") as file:
 		file.write("%d\t%s\n"%(0,page_debut))
 
 
@@ -27,7 +27,8 @@ def scraping(titre):
 	graphe = dict()
 
 	compteur = 0
-	while compteur < 100000:
+
+	while compteur < 1000:
 		print(compteur)
 		#print('longeur de liste_pages ', len(liste_pages)) 
 		compteur += 1
@@ -41,10 +42,10 @@ def scraping(titre):
 
 			if p not in dico_nom_id: 
 				#Si le voisin n'est pas dans le dictionnaire, on l'ajoute 
-				new_id = len(dico_nom_id)  #On l'identifie 
+				new_id = len(dico_nom_id)  #On l'identifie
 				dico_nom_id[p] = new_id 
 				dico_id_nom[new_id] = p
-				with open("titres2.txt", "a") as file:
+				with open("id-titre.txt", "a") as file:
 					file.write("%d\t%s\n"%(new_id,p))
 		
 			graphe[page_id].add( dico_nom_id[p] ) #On ajoute tous les voisins de l'identifiant dans le graphe
@@ -56,15 +57,7 @@ def scraping(titre):
 			with open("aretes.txt", "a") as file1:
 				file1.write("%d\t%d\n"%(page_id, dico_nom_id[p]))
 				
-	return (graphe,len(dico_nom_id))
+	#return (graphe,len(dico_nom_id))
 
-	"""	
-	for noeud in graphe:
-		print('noeud : ', noeud)
-		print('voisins : ', graphe[noeud])
-		input('--')
-	"""
 
-graphe1, taille=scraping('Python_(programming_language)')
-
-conversion_dict_fichier("arete_graphe.txt", graphe1)
+scraping('Python_(programming_language)')
