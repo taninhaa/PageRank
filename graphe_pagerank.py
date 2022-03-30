@@ -45,7 +45,7 @@ def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des él
             col_ind.append(sommet)
     return row_ind,col_ind
 
-def pagerank_sparse(rows, cols, alpha, epsilon): #calcul
+def pagerank_sparse(rows, cols, alpha, epsilon): #calcul du page rank sans utiliser le dictionnaire
 	size = max(max(rows), max(cols)) + 1
 	A = sps.csr_matrix(([1]*len(rows), (rows, cols)), shape=(size,size))
 	A = A + sps.eye(size)
