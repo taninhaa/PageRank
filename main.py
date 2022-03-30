@@ -49,18 +49,3 @@ while compteur < 10:
 			visited.add( dico_nom_id[p] )
 			
 
-"""	
-for noeud in graphe:
-	print('noeud : ', noeud)
-	print('voisins : ', graphe[noeud])
-	input('--')
-"""
-
-file=open("graphe.txt", "w")
-
-#Fonction qui permet de créer un fichier avec les différentes arêtes d'un dictionnaire
-for sommet in graphe: 
-    for voisins in graphe[sommet]:
-        file.write(str(sommet)+" "+str(voisins)+"\n")
-
-file.close()
