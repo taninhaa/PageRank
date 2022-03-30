@@ -5,6 +5,14 @@ import scipy.sparse as sps
 import seaborn
 import csv
 
+def creation_p(dict2): # conversion de notre dictionnaire à la matrice de transition
+    nb_sommet=len(dict2)
+    P=np.zeros((nb_sommet,nb_sommet))
+    for cle in dict2:
+        for sommet in dict2[cle]:
+            P[cle,sommet]=1/len(dict2[cle])
+    return P
+
 def power_iteration_matrice_erreur(dict2,pi,alpha,epsilon): # calcul de la valeur du page rank de manière matricielle avec erreur epsilon
     nb_sommet=len(dict2)
     P=creation_p(dict2)
