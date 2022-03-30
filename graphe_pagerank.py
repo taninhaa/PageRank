@@ -24,6 +24,17 @@ def power_iteration_matrice_erreur(dict2,pi,alpha,epsilon): # calcul de la valeu
         pi=alpha*np.dot(pi_avant,P)+e
     return pi
 
+def reader_lists(fileName):
+	with open(fileName, 'r') as csvfile:
+		rows = []
+		cols = []
+		edgelist = csv.reader(csvfile, delimiter=' ')
+		for line in edgelist:
+			rows.append( int(line[0]) )
+			cols.append( int(line[1]) )
+
+		return rows, cols
+        
 def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des éléments non nuls
     data=[]
     row_ind=[]
@@ -34,7 +45,7 @@ def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des él
             col_ind.append(sommet)
     return row_ind,col_ind
 
-def pagerank_sparse(rows, cols, alpha, epsilon):	
+def pagerank_sparse(rows, cols, alpha, epsilon): #calcul
 	size = max(max(rows), max(cols)) + 1
 	A = sps.csr_matrix(([1]*len(rows), (rows, cols)), shape=(size,size))
 	A = A + sps.eye(size)
