@@ -5,23 +5,6 @@ import scipy.sparse as sps
 import seaborn
 import csv
 
-
-# Power iteration avec la somme
-def power_iteration(dict1,tab,alpha): # fonction qui va calculer la valeur d'une page rank une par une
-    nb_sommet=len(dict1)
-    page_rank_final=np.zeros(nb_sommet) # tableau avec les nouvelles valeurs de page rank
-    constante=(1-alpha)/nb_sommet
-
-    for cles in dict1: # parcours de tous les sommets de notre graphe
-        #print("cles",cles)
-        somme=0
-        for cles2 in dict1: # on parcours tous les sommets de notre graphe
-            if cles in dict1[cles2]: # si un sommet de notre premier parcours se trouve dans l'ensemble on va l'ajouter avec la formule
-                somme=somme+(tab[cles2]/len(dict1[cles2]))  
-        page_rank_final[cles]=alpha*somme+constante
-    return page_rank_final
-
-#Power iteration avec matrice
 def creation_p(dict2): # conversion de notre dictionnaire à la matrice de transition
     nb_sommet=len(dict2)
     P=np.zeros((nb_sommet,nb_sommet))
@@ -30,44 +13,27 @@ def creation_p(dict2): # conversion de notre dictionnaire à la matrice de trans
             P[cle,sommet]=1/len(dict2[cle])
     return P
 
-def power_iteration_matrice(dict2,pi,alpha): # calcul de la valeur du page rank de manière matricielle
+def power_iteration_matrice_erreur(dict2,alpha,epsilon): # calcul de la valeur du page rank de manière matricielle avec erreur epsilon
     nb_sommet=len(dict2)
     P=creation_p(dict2)
-    constante=((1-alpha)/nb_sommet)*np.ones(nb_sommet)
-    return alpha*np.dot(pi,P)+constante
+    e=np.array([(1-alpha)/nb_sommet]*nb_sommet)
+    pi_avant=np.array(e)
+    pi=[0]*nb_sommet
+    while(np.linalg.norm(pi-pi_avant)>epsilon):
+        pi_avant=pi
+        pi=alpha*np.dot(pi_avant,P)+e
+    return pi
 
-#Power iteration avec sparse
-def dict_sparse(dict2): # retourne la matrice sparse
-    data=[]
-    row_ind=[]
-    col_ind=[]
-    for cle in dict2:
-        for sommet in dict2[cle]:
-            data.append(1/len(dict2[cle]))
-            row_ind.append(cle)
-            col_ind.append(sommet)
-    return sps.csr_matrix((data,(row_ind,col_ind)),shape=(len(dict2),len(dict2)))
+def reader_lists(fileName):
+	with open(fileName, 'r') as csvfile:
+		rows = []
+		cols = []
+		edgelist = csv.reader(csvfile, delimiter=' ')
+		for line in edgelist:
+			rows.append( int(line[0]) )
+			cols.append( int(line[1]) )
 
-def power_iteration_sparse(dict2,pi,alpha):
-    nb_sommet=len(dict2)
-    P=dict_sparse(dict2)
-    constante=((1-alpha)/nb_sommet)*np.ones(nb_sommet)
-    P_t=P.transpose()
-    pi_t=pi.transpose()
-    return (alpha*P_t.dot(pi_t)).transpose()+constante
-
-def power_iteration_sparse_erreur(dict2,pi,alpha,epsilon): # avec erreur
-    nb_sommet=len(dict2)
-    P=dict_sparse(dict2)
-    constante=((1-alpha)/nb_sommet)*np.ones(nb_sommet)
-    P_t=P.transpose()
-    page_rank=np.zeros((1,len(dict2)))
-    iteration=0
-    while(np.linalg.norm(page_rank-pi)>epsilon):
-        iteration=iteration+1
-        page_rank=pi
-        pi=(alpha*P_t.dot(page_rank.transpose())).transpose()+constante
-    return pi,iteration
+		return rows, cols
 
 def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des éléments non nuls
     data=[]
@@ -79,7 +45,7 @@ def dict_sparse2(dict2): # retourne les indices de lignes et de colonnes des él
             col_ind.append(sommet)
     return row_ind,col_ind
 
-def pagerank_sparse(rows, cols, alpha, epsilon):	
+def pagerank_sparse(rows, cols, alpha, epsilon): #calcul du page rank sans utiliser le dictionnaire
 	size = max(max(rows), max(cols)) + 1
 	A = sps.csr_matrix(([1]*len(rows), (rows, cols)), shape=(size,size))
 	A = A + sps.eye(size)
