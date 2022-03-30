@@ -1,11 +1,5 @@
-from numpy import Infinity
 import wikipediaapi
-from tqdm import tqdm
 from collections import deque
-import networkx as nx
-import matplotlib.pyplot as plt
-
-from fichier_graphe import conversion_dict_fichier
 
 def scraping(titre):
 	wiki_wiki = wikipediaapi.Wikipedia('en')
