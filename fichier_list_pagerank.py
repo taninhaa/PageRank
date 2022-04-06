@@ -1,6 +1,7 @@
 import csv
 import time
 from graphe_pagerank import pagerank_sparse
+from graphe_pagerank import pagerank_sparse_perso
 import numpy as np
 import sys
 
@@ -29,8 +30,22 @@ t2 = time.time()
 print(t2-t1)
 
 #Calcul du pagerank
-page_rank = pagerank_sparse(ligne,colonne,0.85,0.000001)
+#page_rank = pagerank_sparse(ligne,colonne,0.85,0.000001)
 
+def ligne_personnalise(id):
+    ligne_perso=[]
+    with open("aretes.txt", newline='') as csvfile:
+        spamreader=csv.reader(csvfile, delimiter='\t', quotechar='|')
+        for row in spamreader:
+            if id==int(row[0]):
+                ligne_perso.append(int(row[1]))
+
+    return ligne_perso
+            
+lignes=ligne_personnalise(0)
+#print(lignes)
+page_rank,it=pagerank_sparse_perso(ligne,colonne,0.85,1e-10,lignes)
+print(page_rank)
 #Export du pagerank dans un fichier
-fichier_pagerank = "pagerank.txt"
-export_pagerank(fichier_pagerank,page_rank)
+#fichier_pagerank = "pagerank.txt"
+#export_pagerank(fichier_pagerank,page_rank)
