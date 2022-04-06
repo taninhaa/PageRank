@@ -36,6 +36,23 @@ def creation_p(dict2):
             P[cle,sommet]=1/len(dict2[cle])
     return P
 
+#Fonction qui calcule la page rank avec la formule de la somme
+def power_iteration_somme(dict1,alpha,epsilon):
+    nb_sommet=len(dict1)
+    constante=(1-alpha)/nb_sommet
+    x0=np.zeros(nb_sommet)
+    x1=np.ones(nb_sommet)
+    iteration=0
+    while(np.linalg.norm(x1-x0)>epsilon): 
+        iteration=iteration+1
+        x0=np.copy(x1)
+        for cles in dict1: 
+            somme=0
+            for cles2 in dict1: 
+                if cles in dict1[cles2]:
+                    somme=somme+(x0[cles2]/len(dict1[cles2]))
+            x1[cles]=alpha*somme+constante
+    return x1,iteration
 
 #Fonction qui calcule la valeur du page rank de manière matricielle en prenant en argument un dictionnaire
 def power_iteration(dict2,alpha,epsilon):
@@ -101,3 +118,49 @@ def forward_push(dico, alpha, epsilon, pr_exact):
 		counter += 1
 	return p
 
+#Fonction qui calcule la page rank perso avec somme
+def power_iteration_somme_perso(dict1,alpha,epsilon,liste):
+    nb_sommet=len(dict1)
+
+    #creation y
+    y=np.zeros(nb_sommet)
+    for i in liste:
+        y[i]=1
+    x1=y/len(liste)
+    y=(1-alpha)*y/len(liste)
+    x0=np.zeros(nb_sommet)
+    iteration=0
+    while(np.linalg.norm(x1-x0)>epsilon): 
+        iteration=iteration+1
+        x0=np.copy(x1)
+        for cles in dict1: 
+            somme=0
+            for cles2 in dict1: 
+                if cles in dict1[cles2]:
+                    somme=somme+(x0[cles2]/len(dict1[cles2]))
+            x1[cles]=(alpha*somme)+y[cles]
+    return x1,iteration
+
+#Fonction qui calcule la page rank perso de manière matricielle
+def pagerank_sparse_perso(rows, cols, alpha, epsilon,liste):
+	size = max(max(rows), max(cols)) + 1
+	A = sps.csr_matrix(([1]*len(rows), (rows, cols)), shape=(size,size))
+	A = A + sps.eye(size)
+	D = A.dot([1]*size)
+	Dinv = sps.diags([np.reciprocal(D)], [0])
+	P = Dinv.dot(A)
+
+	#creation de y
+	y=np.zeros(size)
+	for i in liste:
+		y[i]=1
+	pi=np.array(y)
+	y=(1-alpha)*y/len(liste)
+	pi_avant=[0]*size
+	Pt=P.transpose()
+	iteration=0
+	while(np.linalg.norm(pi-pi_avant)>epsilon):
+		pi_avant=pi
+		pi=alpha*(Pt.dot(pi_avant))+y
+		iteration=iteration+1
+	return pi,iteration
