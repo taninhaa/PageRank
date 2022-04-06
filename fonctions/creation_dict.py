@@ -1,4 +1,4 @@
-#Fonction qui va convertir les deux tableaux lignes , colonnes et qui donne le dictionnaire
+#Fonction qui va convertir les deux tableaux lignes , colonnes et qui donne le dictionnaire en ajoutant le self-loop
 def dico_construction(rows,cols):
 	size = len(rows)
 	dico = dict()
@@ -7,4 +7,3 @@ def dico_construction(rows,cols):
 		if cols[i] not in dico: dico[cols[i]] = set([cols[i]])
 		dico[rows[i]].add( cols[i] )
 	return dico
-    

@@ -27,24 +27,13 @@ def dico_construction(rows,cols):
 		dico[rows[i]].add( cols[i] )
 	return dico
 
-#Fonction qui convertit un dictionnaire en matrice de transition
-def creation_p(dict2): 
-    nb_sommet=len(dict2)
-    P=np.zeros((nb_sommet,nb_sommet))
-    for cle in dict2:
-        for sommet in dict2[cle]:
-            P[cle,sommet]=1/len(dict2[cle])
-    return P
-
 #Fonction qui calcule la page rank avec la formule de la somme
 def power_iteration_somme(dict1,alpha,epsilon):
     nb_sommet=len(dict1)
     constante=(1-alpha)/nb_sommet
     x0=np.zeros(nb_sommet)
     x1=np.ones(nb_sommet)
-    iteration=0
     while(np.linalg.norm(x1-x0)>epsilon): 
-        iteration=iteration+1
         x0=np.copy(x1)
         for cles in dict1: 
             somme=0
@@ -52,19 +41,7 @@ def power_iteration_somme(dict1,alpha,epsilon):
                 if cles in dict1[cles2]:
                     somme=somme+(x0[cles2]/len(dict1[cles2]))
             x1[cles]=alpha*somme+constante
-    return x1,iteration
-
-#Fonction qui calcule la valeur du page rank de manière matricielle en prenant en argument un dictionnaire
-def power_iteration(dict2,alpha,epsilon):
-    nb_sommet=len(dict2)
-    P=creation_p(dict2)
-    e=np.array([(1-alpha)/nb_sommet]*nb_sommet)
-    pi_avant=np.array(e)
-    pi=[0]*nb_sommet
-    while(np.linalg.norm(pi-pi_avant)>epsilon):
-        pi_avant=pi
-        pi=alpha*np.dot(pi_avant,P)+e
-    return pi
+    return x1
 
 #Fonction qui calcule la valeur du page rank sans utiliser le dictionnaire avec sparse
 def pagerank_sparse(rows, cols, alpha, epsilon): 
@@ -97,15 +74,6 @@ def exact_pr(rows, cols, alpha):
 	M = sps.eye(size) - alpha*P
 	pr_exact = spl.spsolve(M, e)
 	return pr_exact
-
-def dico_construction(rows,cols):
-	size = len(rows)
-	dico = dict()
-	for i in range(size):
-		if rows[i] not in dico: dico[rows[i]] = set([rows[i]])	
-		if cols[i] not in dico: dico[cols[i]] = set([cols[i]])
-		dico[rows[i]].add( cols[i] )
-	return dico
 	
 #Forward push avec dictionnaire en entrée
 def forward_push(dico, alpha, epsilon):
@@ -160,9 +128,7 @@ def power_iteration_somme_perso(dict1,alpha,epsilon,liste):
     x1=y/len(liste)
     y=(1-alpha)*y/len(liste)
     x0=np.zeros(nb_sommet)
-    iteration=0
     while(np.linalg.norm(x1-x0)>epsilon): 
-        iteration=iteration+1
         x0=np.copy(x1)
         for cles in dict1: 
             somme=0
@@ -170,7 +136,7 @@ def power_iteration_somme_perso(dict1,alpha,epsilon,liste):
                 if cles in dict1[cles2]:
                     somme=somme+(x0[cles2]/len(dict1[cles2]))
             x1[cles]=(alpha*somme)+y[cles]
-    return x1,iteration
+    return x1
 
 #Fonction qui calcule la page rank perso de manière matricielle
 def pagerank_sparse_perso(rows, cols, alpha, epsilon,liste):
