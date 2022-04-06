@@ -4,13 +4,10 @@ import wikipediaapi
 import scipy.sparse as sps
 import scipy.sparse.linalg as spl
 import seaborn
-import csv
 import sys
-
-sys.path.append("/PageRank/graphe_pagerank.py")
-
-from graphe_pagerank import reader_lists
-
+import csv
+sys.path.append("../fonctions")
+from creation_dict  import dico_construction
 
 """rows,cols=reader_lists("aretes.txt")
 dico=dico_construction(rows,cols)
