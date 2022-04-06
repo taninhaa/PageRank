@@ -93,21 +93,29 @@ def exact_pr(rows, cols, alpha):
 	D = A.dot([1]*size)
 	Dinv = sps.diags([np.reciprocal(D)], [0])
 	P = Dinv.dot( A ).transpose()
-	e = [1]*size
+	e = [1/size]*size
 	M = sps.eye(size) - alpha*P
 	pr_exact = spl.spsolve(M, e)
 	return pr_exact
 
+def dico_construction(rows,cols):
+	size = len(rows)
+	dico = dict()
+	for i in range(size):
+		if rows[i] not in dico: dico[rows[i]] = set([rows[i]])	
+		if cols[i] not in dico: dico[cols[i]] = set([cols[i]])
+		dico[rows[i]].add( cols[i] )
+	return dico
+	
 #Forward push avec dictionnaire en entrée
-def forward_push(dico, alpha, epsilon, pr_exact):
+def forward_push(dico, alpha, epsilon):
 	size = len(dico)
-	r = np.array([(1-alpha)]*size)
+	r = np.array([(1-alpha)/size]*size)
 	p = np.zeros(size)
 	counter = 0
 	while max( r ) > epsilon : 
 		u = np.argmax( r )
 		x = r[u]
-		if counter % 100 == 0: print(counter, np.linalg.norm(pr_exact - p))
 		p[u] += x
 		r[u] -= x
 		
