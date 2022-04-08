@@ -2,28 +2,32 @@
 #YOoo c'est le script de Tania et Bastien !!
 # Pour compiler chmod 755 nomfichier
 
-#Test
-echo Hello les copains
+ChercheID(){
+    #Retourne les ID en lien avec le mot recherché
+    ID=$(grep "\\b$1\\b" id-titre.txt | awk -F'\t' '{print $1}')
 
-#Retourne les ID en lien avec le mot recherché
-ID=$(grep "\\b$1\\b" id-titre.txt | awk -F'\t' '{print $1}')
-echo $ID
+    #Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
+    IDPagerank=()
+    for id in $ID
+    do
+        IDPagerank+=($(grep "^$id\\b" pagerank.txt))
+    done
+    
+}
 
-#Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
-IDPagerank=()
-for id in $ID
-do
-    IDPagerank+=($(grep "^$id\\b" pagerank.txt))
-done
-
-
+#Si le titre $1 n'est pas vide on cherche les ID
+if test -n "$1" 
+then
+    ChercheID $1
+fi
 
 #print test
-
-for i in ${!IDPagerank[@]}
+for val in ${IDPagerank[@]} 
 do  
-    echo ${IDPagerank[$i]}
+    echo $val
 done
+
+#awk -v a=$1 'BEGIN{var=a} ($2 ~ (a)) {print $1,$2}' id-titre.txt
 
 exit 0
 
