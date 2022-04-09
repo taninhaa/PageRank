@@ -18,12 +18,12 @@ if test -n "$1"
 then
     ChercheID $1
 
+    #Si le titre retourne au moins un ID, on affiche le(s) meilleur(s)
     if test -n "$IDPagerank"
     then  
-        #Les ID sont triés par valeur du Pagerank
-        BestId=$(./triPagerank ${IDPagerank[*]}|awk -F'\t' 'NR < 6 {print $1}')
+        #Les ID sont triés par valeur du Pagerank et on retourne les 5 meilleurs
+        BestId=$(./triPagerank ${IDPagerank[*]}|awk -F'\t' '{print $1}')
         
-        #On retourne les 5 meilleurs
         i=1
         for id in $BestId
         do

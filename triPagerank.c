@@ -90,11 +90,20 @@ void tri_rapide(float** tab, int N){
     }
 }
 
+//Retourne le minimum de a et b
+int min(int a, int b){
+    if (a < b)
+        return a;
+
+    return b;
+}
+
 int main (int argc, char *argv[]){
     if (argc == 1){
         printf("Pas de resultat\n");
         return 0;
     }
+
     int taille_tab = (argc-1)/2;
     float** tab = nouveau_tableau(taille_tab);
     for(int i=0;i<taille_tab;i++){
@@ -103,7 +112,11 @@ int main (int argc, char *argv[]){
     }
     
     tri_rapide(tab,taille_tab);
-    affiche_tab(tab,taille_tab);
+
+    int nbPage = 5;
+    for(int i=0;i<min(nbPage,taille_tab);i++)
+        printf("%.0f\t%.15f\n",tab[i][0],tab[i][1]);
+    
     detruire_tableau(tab,taille_tab);
     return 0;
 }
