@@ -60,10 +60,10 @@ void tri_rapide(float** tab, int N){
             }
         }
         // Appel récursif sur les sous ensembles <= et >
-        if(indice_inf!=0){
+        if(indice_inf>1){
             tri_rapide(tab_inferieur,indice_inf);
         }
-        if(indice_sup!=0){
+        if(indice_sup>1){
             tri_rapide(tab_superieur,indice_sup);
         }
         
@@ -79,7 +79,7 @@ void tri_rapide(float** tab, int N){
                     tab[i][0] = valpivot;
                     tab[i][1] = pivot;
                 }else{//enfin la liste > au pivot
-                    tab[i][1]=tab_superieur[i-indice_inf-1][0];
+                    tab[i][0]=tab_superieur[i-indice_inf-1][0];
                     tab[i][1]=tab_superieur[i-indice_inf-1][1];
                 }
             }
@@ -109,14 +109,13 @@ int main (int argc, char *argv[]){
     for(int i=0;i<taille_tab;i++){
         tab[i][0] = atof(argv[2*i+1]);
         tab[i][1] = atof(argv[2*i+2]);
-    }
-    
+    }   
     tri_rapide(tab,taille_tab);
-
     int nbPage = 5;
-    for(int i=0;i<min(nbPage,taille_tab);i++)
-        printf("%.0f\t%.15f\n",tab[i][0],tab[i][1]);
-    
+    for(int i=0;i<min(nbPage,taille_tab);i++){
+        //printf("%.0f\t%.15f\n",tab[i][0],tab[i][1]);
+        printf("%.f\n",tab[i][0]);
+    }
     detruire_tableau(tab,taille_tab);
     return 0;
 }

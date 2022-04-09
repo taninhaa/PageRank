@@ -4,13 +4,14 @@
 ChercheID(){
     #Retourne les ID en lien avec le mot recherché
     ID=$(grep "\\b$1\\b" id-titre.txt | awk -F'\t' '{print $1}')
-
+    
     #Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
     IDPagerank=()
     for id in $ID
     do
         IDPagerank+=($(grep "^$id\\b" pagerank.txt))
     done
+
 }
 
 #Si le titre $1 n'est pas vide on cherche les ID
@@ -19,16 +20,16 @@ then
     ChercheID $1
 
     #Si le titre retourne au moins un ID, on affiche le(s) meilleur(s)
-    if test -n "$IDPagerank"
+    if test -n "$ID"
     then  
         #Les ID sont triés par valeur du Pagerank et on retourne les 5 meilleurs
-        BestId=$(./triPagerank ${IDPagerank[*]}|awk -F'\t' '{print $1}')
-        
+        BestId=$(./triPagerank ${IDPagerank[*]})
+    
         i=1
         for id in $BestId
         do
             echo -n "$i >> " 
-            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt
+            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2 ,$1}' id-titre.txt
             i=$((i+1))
         done
     else
