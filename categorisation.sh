@@ -1,29 +1,14 @@
 #!/bin/bash
-#YOoo c'est le script de Tania et Bastien !!
 # Pour compiler chmod 755 nomfichier
 
 #Test
 echo Hello les copains
 
-#Retourne les ID en lien avec le mot recherché
-ID=$(grep "\\b$1\\b" id-titre.txt | awk -F'\t' '{print $1}')
-echo $ID
-
-#Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
-IDPagerank=()
-for id in $ID
+for ((i=1;i<20;i++))
 do
-    IDPagerank+=($(grep "^$id\\b" pagerank.txt))
+    head -$(($(((RANDOM<<15)|RANDOM))% `wc -l < id-titre.txt` + 1)) id-titre.txt| tail -1
 done
 
-
-
-#print test
-
-for i in ${!IDPagerank[@]}
-do  
-    echo ${IDPagerank[$i]}
-done
 
 exit 0
 
