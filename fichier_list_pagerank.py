@@ -45,7 +45,7 @@ def ligne_personnalise(id):
 lignes=ligne_personnalise(0)
 #print(lignes)
 page_rank,it=pagerank_sparse_perso(ligne,colonne,0.85,1e-10,lignes)
-print(page_rank)
+print(page_rank, it)
 #Export du pagerank dans un fichier
 #fichier_pagerank = "pagerank.txt"
 #export_pagerank(fichier_pagerank,page_rank)
