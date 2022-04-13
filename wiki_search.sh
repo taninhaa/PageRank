@@ -41,12 +41,11 @@ if test -n "$1"; then
             read num
         done
         
-        truc=$(echo $BestId | awk -v a=$num '{print $a}')
-        echo ${truc}
-        title=$(awk -v a=$truc -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt)
-        echo ${title}
+        selection=$(echo $BestId | awk -v a=$num '{print $a}')
         
-        #python3 ./selecteur.py $num ${BestId[*]}
+        title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' id-titre.txt)
+        
+        python3 selecteur.py $title
     else
         echo "Erreur : «$1» ne retourne aucun résultat.\nEssayez un nombre entre 1 et 5."
     fi
