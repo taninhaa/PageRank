@@ -47,7 +47,7 @@ if test -n "$1"; then
         
         python3 selecteur.py $title
     else
-        echo "Erreur : «$1» ne retourne aucun résultat.\nEssayez un nombre entre 1 et 5."
+        echo "Erreur : «$1» ne retourne aucun résultat."
     fi
 else
     echo "Erreur : Aucun argument."
