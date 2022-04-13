@@ -8,7 +8,7 @@ def pr_power_iteration_sparse(rows,cols, alpha, epsilon,perso,liste=[]):
     D=A.dot([1]*size)
     Dinv=sps.diags([np.reciprocal(D)],[0])
     P=Dinv.dot(A)
-
+    
     #creation de y  
     if perso:
         y=np.zeros(size)

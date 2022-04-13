@@ -5,7 +5,7 @@ def reader_lists(fileName):
 	with open(fileName, 'r') as csvfile:
 		rows = []
 		cols = []
-		edgelist = csv.reader(csvfile, delimiter=' ')
+		edgelist = csv.reader(csvfile, delimiter='\t')
 		for line in edgelist:
 			rows.append( int(line[0]) )
 			cols.append( int(line[1]) )

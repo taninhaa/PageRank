@@ -10,8 +10,7 @@ import sys
 import csv
 sys.path.append("./fonctions")
 from read_file_into_row_col import reader_lists
-
-#row,col=reader_lists("aretes.txt")
+from pr_power_iteration_sparse import pr_power_iteration_sparse
 
 def cree_dict():
     size=input("Nombre de catégorie ? :")
@@ -28,11 +27,11 @@ def random_site(site,n):
     tab=[]
     with open(site,'r') as f:
         lines=f.readlines()
-        for i in range(n+1):
+        for i in range(n):
             x=random.randint(0,len(lines))
             id.append(x)
             tab.append(lines[x])
-    for i in range(n+1):
+    for i in range(n):
         res=''
         condition=0
         for j in tab[i]:
@@ -50,18 +49,19 @@ def categorisation(dico,site):
     cat=[]
     for i in dico:
         cat.append(i)
-    print("cat",cat)
     for i in site:
         print("Pour le site: ",i[1])
         print("Les différentes catégories sont",cat)
         categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
-        if categorie not in dico:
+        while(categorie not in dico):
             print("La catégorie n'est pas valide")
             categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
         dico[categorie].add(i[0])
     return dico
 
 def y(categorie,dico):
+    if(categorie not in dico):
+        return []
     tab=[]
     for i in dico[categorie]:
         tab.append(i)
@@ -74,5 +74,10 @@ site=random_site("id-titre.txt",1)
 print("site",site)
 
 dico2=categorisation(dico,site)
-print(dico2)
-#   print(y("Sport",dico2))
+
+y=y("Sport",dico2)
+print(y)
+row,col=reader_lists("aretes.txt")
+
+pr=pr_power_iteration_sparse(row,col,0.85,1e-10,True,y)
+print(pr)
