@@ -41,12 +41,7 @@ if test -n "$1"; then
             read num
         done
         
-        #IFS=' '
-        #split -a truc <<< "$BestId"
-
-        #truc=$(echo $BestId | split )
         truc=$(echo $BestId | awk -v a=$num '{print $a}')
-        #echo $BestId
         echo ${truc}
         #python3 ./selecteur.py $num ${BestId[*]}
     else
