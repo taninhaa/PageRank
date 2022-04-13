@@ -27,25 +27,27 @@ if test -n "$1"; then
         i=1
         for id in $BestId
         do
-            echo -n "$i >> " 
-            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt
+            echo -n "$i >> " #Affiche le numéro 
+            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt #Affiche le titre pour chaque ID
             i=$((i+1))
         done
 
         #Selection pour l'affichage du résumé
         echo "(Entrez le numéro associé au titre pour afficher un court résumé)"
-        read num
-        nbId=$(echo "^[1-"$(echo $BestId|wc -w)"]$")
+
+        read num 	#Lis le numéro tapé par l'utilisateur
+        nbId=$(echo "^[1-"$(echo $BestId|wc -w)"]$") #Pour savoir si le numéro tapé est entre 1 et 5
+        
         while ! [ $(echo $num | grep $nbId| wc -l) -eq "1" ]; do
             echo "Erreur : \"$num\" ne correspond à aucun titre" 
             read num
         done
         
-        selection=$(echo $BestId | awk -v a=$num '{print $a}')
+        selection=$(echo $BestId | awk -v a=$num '{print $a}') #Prend la selection de l'utilisateur (ID)
         
-        title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' id-titre.txt)
+        title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' id-titre.txt) #Stocke le titre associé à la selection 
         
-        python3 selecteur.py $title
+        python3 selecteur.py $title #On affiche le résumé de la selection
     else
         echo "Erreur : «$1» ne retourne aucun résultat."
     fi
