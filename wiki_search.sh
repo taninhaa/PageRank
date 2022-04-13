@@ -15,25 +15,41 @@ ChercheID(){
 }
 
 #Si le titre $1 n'est pas vide on cherche les ID
-if test -n "$1" 
-then
+if test -n "$1"; then
     ChercheID $1
 
     #Si le titre retourne au moins un ID, on affiche le(s) meilleur(s)
-    if test -n "$ID"
-    then  
+    if test -n "$ID"; then  
         #Les ID sont triés par valeur du Pagerank et on retourne les 5 meilleurs
         BestId=$(./triPagerank ${IDPagerank[*]})
-    
+        
+        #Affichage des 5 meilleurs
         i=1
         for id in $BestId
         do
             echo -n "$i >> " 
-            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2 ,$1}' id-titre.txt
+            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt
             i=$((i+1))
         done
+
+        #Selection pour l'affichage du résumé
+        echo "(Entrez le numéro associé au titre pour afficher un court résumé)"
+        read num
+        nbId=$(echo "^[1-"$(echo $BestId|wc -w)"]$")
+        while ! [ $(echo $num | grep $nbId| wc -l) -eq "1" ]; do
+            echo "Erreur : \"$num\" ne correspond à aucun titre" 
+            read num
+        done
+        
+        IFS=' '
+        split -a truc <<< "$BestId"
+
+        #truc=$(echo $BestId | split )
+        #truc=$(echo $BestId | awk -v a=$num '{print ARGV[0]}')
+        echo ${truc[2]}
+        #python3 ./selecteur.py $num ${BestId[*]}
     else
-        echo "Erreur : «$1» ne retourne aucun résultat."
+        echo "Erreur : «$1» ne retourne aucun résultat.\nEssayez un nombre entre 1 et 5."
     fi
 else
     echo "Erreur : Aucun argument."
