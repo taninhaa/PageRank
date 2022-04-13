@@ -45,7 +45,7 @@ if test -n "$1"; then
         echo ${truc}
         title=$(awk -v a=$truc -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt)
         echo ${title}
-
+        
         #python3 ./selecteur.py $num ${BestId[*]}
     else
         echo "Erreur : «$1» ne retourne aucun résultat.\nEssayez un nombre entre 1 et 5."
