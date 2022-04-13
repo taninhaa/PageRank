@@ -9,6 +9,7 @@ do
     head -$(($(((RANDOM<<15)|RANDOM))% `wc -l < id-titre.txt` + 1)) id-titre.txt| tail -1
 done
 
+#python3 categorisation.py 
 
 exit 0
 

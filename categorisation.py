@@ -59,14 +59,14 @@ def categorisation(dico,site):
         dico[categorie].add(i[0])
     return dico
 
-def y(categorie,dico):
+def liste(categorie,dico):
     if(categorie not in dico):
         return []
     tab=[]
     for i in dico[categorie]:
         tab.append(i)
     return tab
-
+"""
 dico=cree_dict()
 print("dico",dico)
 
@@ -75,9 +75,75 @@ print("site",site)
 
 dico2=categorisation(dico,site)
 
-y=y("Sport",dico2)
-print(y)
-row,col=reader_lists("aretes.txt")
+liste=liste("Sport",dico2)
+print(liste)
+row,col=reader_lists("aretes.txt")"""
 
-pr=pr_power_iteration_sparse(row,col,0.85,1e-10,True,y)
-print(pr)
+#pr=pr_power_iteration_sparse(row,col,0.85,1e-10,True,y)
+#print(pr)
+
+def cree_dict2():
+    size=input("Nombre de catégorie ? :")
+    len=int(size)
+    dico=dict()
+    for i in range(len):
+        categorie=input("Nom de la catégorie ? :")
+        dico[categorie]=i
+    dico["Autres"]=len
+    return dico
+
+
+
+def cree_dict3(size):
+    dico=dict()
+    for i in range(size):  
+        dico[i]=set()
+    return dico
+
+
+
+def categorisation2(dico,site):
+    print("Les différentes catégories sont")
+    print(dico)
+    print("Rentrez l'entier associé")
+    dico_c=cree_dict3(len(dico))
+    for i in site:
+        print("Pour le site: ",i[1])
+        categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
+        while int(categorie) not in dico_c:
+            print("La catégorie n'est pas valide")
+            categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
+        dico_c[int(categorie)].add(i[0])
+    return dico_c
+
+
+def liste2(dico,dico_c):
+    categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
+    i=dico[categorie]
+    tab=[]
+    for j in dico_c[i]:
+        tab.append(j)
+    return tab
+
+
+
+#dico2=cree_dict2()
+#print("dico2",dico2)
+
+#site=random_site("id-titre.txt",1)
+#print(site)
+
+#dico3=categorisation2(dico2,site)
+#print("dico3",dico3)
+
+#print(liste2(dico2,dico3))
+
+"""col=liste2(dico2,dico3)
+print(col)
+row=np.ones(len(col))
+print(row)"""
+#y=sps.csr_matrix(([1]*len(row),(row,col)),shape=(1,100000000))
+#print(y)
+
+y=sps.csr_matrix([1],([1,1],[1000,12]),(100,1000))
+print(y)
