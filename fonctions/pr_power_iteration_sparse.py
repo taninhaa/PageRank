@@ -9,10 +9,9 @@ def pr_power_iteration_sparse(rows,cols, alpha, epsilon,perso,liste=[]):
     Dinv=sps.diags([np.reciprocal(D)],[0])
     P=Dinv.dot(A)
     
-    print("size",size)
     #creation de y  
     if perso:
-        y=[0]*len
+        y=[0]*size
         for i in liste:
             y[i]=1
         pi=np.array(y)

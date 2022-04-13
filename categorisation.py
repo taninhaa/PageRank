@@ -18,8 +18,8 @@ def cree_dict():
     dico=dict()
     for i in range(len):
         categorie=input("Nom de la catégorie ? :")
-        dico[categorie]=set()
-    dico["Autres"]=set()
+        dico[categorie]=i
+    dico["Autres"]=len
     return dico
 
 def random_site(site,n):
@@ -45,63 +45,17 @@ def random_site(site,n):
         site.append((id[i],tab[i]))
     return site
 
-def categorisation(dico,site):
-    cat=[]
-    for i in dico:
-        cat.append(i)
-    for i in site:
-        print("Pour le site: ",i[1])
-        print("Les différentes catégories sont",cat)
-        categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
-        while(categorie not in dico):
-            print("La catégorie n'est pas valide")
-            categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
-        dico[categorie].add(i[0])
-    return dico
-
-def liste(categorie,dico):
-    if(categorie not in dico):
-        return []
-    tab=[]
-    for i in dico[categorie]:
-        tab.append(i)
-    return tab
-
-dico=cree_dict()
-site=random_site("id-titre.txt",20)
-dico2=categorisation(dico,site)
-
-liste=liste("Sport",dico2)
-row,col=reader_lists("aretes.txt")
-
-pr=pr_power_iteration_sparse(row,col,0.85,1e-10,False)
-print(pr)
-
-def cree_dict2():
-    size=input("Nombre de catégorie ? :")
-    len=int(size)
-    dico=dict()
-    for i in range(len):
-        categorie=input("Nom de la catégorie ? :")
-        dico[categorie]=i
-    dico["Autres"]=len
-    return dico
-
-
-
-def cree_dict3(size):
+def cree_dict_vide(size):
     dico=dict()
     for i in range(size):  
         dico[i]=set()
     return dico
 
-
-
-def categorisation2(dico,site):
+def categorisation(dico,site):
     print("Les différentes catégories sont")
     print(dico)
     print("Rentrez l'entier associé")
-    dico_c=cree_dict3(len(dico))
+    dico_c=cree_dict_vide(len(dico))
     for i in site:
         print("Pour le site: ",i[1])
         categorie=input("Dans quelle catégorie veux-tu la mettre ? :")
@@ -111,8 +65,7 @@ def categorisation2(dico,site):
         dico_c[int(categorie)].add(i[0])
     return dico_c
 
-
-def liste2(dico,dico_c):
+def liste(dico,dico_c):
     categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
     i=dico[categorie]
     tab=[]
@@ -120,15 +73,31 @@ def liste2(dico,dico_c):
         tab.append(j)
     return tab
 
+rows,cols=reader_lists("aretes.txt")
 
-
-dico2=cree_dict2()
+dico2=cree_dict()
 print("dico2",dico2)
 
-site=random_site("id-titre.txt",1)
+site=random_site("id-titre.txt",20)
 print(site)
 
-dico3=categorisation2(dico2,site)
+dico3=categorisation(dico2,site)
 print("dico3",dico3)
 
-liste2=liste2(dico2,dico3)
+liste2=liste(dico2,dico3)
+pr=pr_power_iteration_sparse(rows,cols,0.85,1e-10,True,liste2)
+for i in range(len(pr)):
+    if(pr[i]>0):
+        print(pr[i])
+
+"""dico=cree_dict()
+site=random_site("id-titre.txt",20)
+dico2=categorisation(dico,site)
+
+liste3=liste("Sport",dico2)
+
+pr=pr_power_iteration_sparse(row,col,0.85,1e-10,True,liste3)
+for i in range(len(pr)):
+    if(pr[i]>0):
+        print(pr[i])"""
+
