@@ -66,21 +66,16 @@ def liste(categorie,dico):
     for i in dico[categorie]:
         tab.append(i)
     return tab
-"""
+
 dico=cree_dict()
-print("dico",dico)
-
-site=random_site("id-titre.txt",1)
-print("site",site)
-
+site=random_site("id-titre.txt",20)
 dico2=categorisation(dico,site)
 
 liste=liste("Sport",dico2)
-print(liste)
-row,col=reader_lists("aretes.txt")"""
+row,col=reader_lists("aretes.txt")
 
-#pr=pr_power_iteration_sparse(row,col,0.85,1e-10,True,y)
-#print(pr)
+pr=pr_power_iteration_sparse(row,col,0.85,1e-10,False)
+print(pr)
 
 def cree_dict2():
     size=input("Nombre de catégorie ? :")
@@ -127,23 +122,13 @@ def liste2(dico,dico_c):
 
 
 
-#dico2=cree_dict2()
-#print("dico2",dico2)
+dico2=cree_dict2()
+print("dico2",dico2)
 
-#site=random_site("id-titre.txt",1)
-#print(site)
+site=random_site("id-titre.txt",1)
+print(site)
 
-#dico3=categorisation2(dico2,site)
-#print("dico3",dico3)
+dico3=categorisation2(dico2,site)
+print("dico3",dico3)
 
-#print(liste2(dico2,dico3))
-
-"""col=liste2(dico2,dico3)
-print(col)
-row=np.ones(len(col))
-print(row)"""
-#y=sps.csr_matrix(([1]*len(row),(row,col)),shape=(1,100000000))
-#print(y)
-
-y=sps.csr_matrix([1],([1,1],[1000,12]),(100,1000))
-print(y)
+liste2=liste2(dico2,dico3)
