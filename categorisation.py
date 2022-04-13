@@ -1,5 +1,4 @@
 import random
-
 import numpy as np
 import matplotlib.pyplot as plt
 import wikipediaapi
@@ -12,7 +11,7 @@ sys.path.append("./fonctions")
 from read_file_into_row_col import reader_lists
 from pr_power_iteration_sparse import pr_power_iteration_sparse
 
-def cree_dict():
+def cree_dict(): #Cree un dicionnaire qui associe chaque catégorie à un entier
     size=input("Nombre de catégorie ? :")
     len=int(size)
     dico=dict()
@@ -22,7 +21,7 @@ def cree_dict():
     dico["Autres"]=len
     return dico
 
-def random_site(site,n):
+def random_site(site,n): # Cree un tuple de n sites aléatoires avec l'id et le titre
     id=[]
     tab=[]
     with open(site,'r') as f:
@@ -45,13 +44,13 @@ def random_site(site,n):
         site.append((id[i],tab[i]))
     return site
 
-def cree_dict_vide(size):
+def cree_dict_vide(size): # Cree un dictionnaire vide avec comme cle un entier qui represente la catégorie
     dico=dict()
     for i in range(size):  
         dico[i]=set()
     return dico
 
-def categorisation(dico,site):
+def categorisation(dico,site): # fonction qui permet de catégoriser les sites
     print("Les différentes catégories sont")
     print(dico)
     print("Rentrez l'entier associé")
@@ -65,7 +64,7 @@ def categorisation(dico,site):
         dico_c[int(categorie)].add(i[0])
     return dico_c
 
-def liste(dico,dico_c):
+def liste(dico,dico_c): # fonction qui te donne la liste des sites qui correspondent à la catégorie qu'on veut avec leur id
     categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
     i=dico[categorie]
     tab=[]
@@ -89,15 +88,4 @@ pr=pr_power_iteration_sparse(rows,cols,0.85,1e-10,True,liste2)
 for i in range(len(pr)):
     if(pr[i]>0):
         print(pr[i])
-
-"""dico=cree_dict()
-site=random_site("id-titre.txt",20)
-dico2=categorisation(dico,site)
-
-liste3=liste("Sport",dico2)
-
-pr=pr_power_iteration_sparse(row,col,0.85,1e-10,True,liste3)
-for i in range(len(pr)):
-    if(pr[i]>0):
-        print(pr[i])"""
 
