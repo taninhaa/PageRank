@@ -27,7 +27,8 @@ def random_site(site,n): # Cree un tuple de n sites aléatoires avec l'id et le 
     with open(site,'r') as f:
         lines=f.readlines()
         for i in range(n):
-            x=random.randint(0,len(lines))
+            x=random.randint(0,2000)
+            #x=random.randint(0,len(lines))
             id.append(x)
             tab.append(lines[x])
     for i in range(n):
@@ -66,6 +67,9 @@ def categorisation(dico,site): # fonction qui permet de catégoriser les sites
 
 def liste(dico,dico_c): # fonction qui te donne la liste des sites qui correspondent à la catégorie qu'on veut avec leur id
     categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
+    while categorie not in dico:
+            print("La catégorie n'est pas valide")
+            categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
     i=dico[categorie]
     tab=[]
     for j in dico_c[i]:
@@ -75,17 +79,16 @@ def liste(dico,dico_c): # fonction qui te donne la liste des sites qui correspon
 rows,cols=reader_lists("aretes.txt")
 
 dico2=cree_dict()
-print("dico2",dico2)
 
 site=random_site("id-titre.txt",20)
 print(site)
 
 dico3=categorisation(dico2,site)
-print("dico3",dico3)
-
 liste2=liste(dico2,dico3)
+print(liste2)
 pr=pr_power_iteration_sparse(rows,cols,0.85,1e-10,True,liste2)
 for i in range(len(pr)):
     if(pr[i]>0):
+        input()
         print(pr[i])
 
