@@ -3,7 +3,7 @@ from collections import deque
 
 def scraping(titre):
 	wiki_wiki = wikipediaapi.Wikipedia('en')
-	# Dictionnaire d'identifients
+	# Dictionnaire d'identifiants
 	dico_nom_id, dico_id_nom = dict(), dict()
 	page_debut = titre
 	dico_nom_id[page_debut] = 0
@@ -54,4 +54,15 @@ def scraping(titre):
 	#return (graphe,len(dico_nom_id))
 
 
-scraping('Python_(programming_language)')
+#scraping('Python_(programming_language)')
+
+"""
+def initScraping():
+	with open("test.txt",'x'):
+		pass
+	with open("")
+initScraping()
+
+"""
+with open("PageRank/test.txt",'x'):
+	pass
