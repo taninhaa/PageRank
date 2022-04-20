@@ -33,7 +33,7 @@ if test -n "$1"; then
         done
 
         #Selection pour l'affichage du résumé
-        echo "(Entrez le numéro associé au titre pour afficher un court résumé)"
+        echo "(Enter the number of the page wanted for a short summary)"
 
         read num 	#Lis le numéro tapé par l'utilisateur
         nbId=$(echo "^[1-"$(echo $BestId|wc -w)"]$") #Pour savoir si le numéro tapé est entre 1 et 5
