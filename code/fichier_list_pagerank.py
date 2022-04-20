@@ -23,7 +23,7 @@ def export_pagerank(fichier,pagerank):
             file.write("%d\t%.15f\n"%(i+1,pagerank[i]))
 
 #Lecture du fichier d'arêtes
-fichier_aretes = "./aretes.txt"
+fichier_aretes = "../data/aretes.txt"
 t1 = time.time()
 (ligne,colonne) = conversion_list_fichier_graphe(fichier_aretes)
 t2 = time.time()

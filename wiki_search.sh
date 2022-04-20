@@ -3,13 +3,13 @@
 
 ChercheID(){
     #Retourne les ID en lien avec le mot recherché
-    ID=$(grep "\\b$1\\b" id-titre.txt | awk -F'\t' '{print $1}')
+    ID=$(grep "\\b$1\\b" ./data/id-titre.txt | awk -F'\t' '{print $1}')
     
     #Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
     IDPagerank=()
     for id in $ID
     do
-        IDPagerank+=($(grep "^$id\\b" pagerank.txt))
+        IDPagerank+=($(grep "^$id\\b" ./data/pagerank.txt))
     done
 
 }
@@ -21,14 +21,14 @@ if test -n "$1"; then
     #Si le titre retourne au moins un ID, on affiche le(s) meilleur(s)
     if test -n "$ID"; then  
         #Les ID sont triés par valeur du Pagerank et on retourne les 5 meilleurs
-        BestId=$(./triPagerank ${IDPagerank[*]})
+        BestId=$(./code/triPagerank ${IDPagerank[*]})
         
         #Affichage des 5 meilleurs
         i=1
         for id in $BestId
         do
             echo -n "$i >> " #Affiche le numéro 
-            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' id-titre.txt #Affiche le titre pour chaque ID
+            awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' ./data/id-titre.txt #Affiche le titre pour chaque ID
             i=$((i+1))
         done
 
@@ -45,13 +45,13 @@ if test -n "$1"; then
         
         selection=$(echo $BestId | awk -v a=$num '{print $a}') #Prend la selection de l'utilisateur (ID)
         
-        title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' id-titre.txt) #Stocke le titre associé à la selection 
+        title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' ./data/id-titre.txt) #Stocke le titre associé à la selection 
         
-        python3 selecteur.py $title #On affiche le résumé de la selection
+        python3 ./code/selecteur.py $title #On affiche le résumé de la selection
         echo "Press i for more information on wikipedia"
         read info
         if [ $info = "i" ];then
-            ./open_page $title
+            ./code/open_page $title
         fi
     else
         echo "Erreur : «$1» ne retourne aucun résultat."

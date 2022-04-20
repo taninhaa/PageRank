@@ -14,7 +14,7 @@ def import_pagerank(fichier):
     pagerank = np.array([id,val_pagerank])
     return pagerank
 
-fichier_pagerank = "pagerank.txt"
+fichier_pagerank = "../data/pagerank.txt"
 pagerank = import_pagerank(fichier_pagerank)
 index_sort = np.argsort(pagerank[1])
 

@@ -14,4 +14,4 @@ def conversion_dict_fichier(fichier, graphe):
     file.close()
 
 
-conversion_dict_fichier("graphe.txt", graphe1)
+conversion_dict_fichier("../data/graphe.txt", graphe1)

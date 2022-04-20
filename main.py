@@ -58,11 +58,10 @@ def scraping(titre):
 
 """
 def initScraping():
-	with open("test.txt",'x'):
+	with open("data/test.txt",'x'):
 		pass
 	with open("")
 initScraping()
 
 """
-with open("PageRank/test.txt",'x'):
-	pass
+
