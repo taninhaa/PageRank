@@ -22,12 +22,16 @@ def cree_dict(): #Cree un dicionnaire qui associe chaque catégorie à un entier
     return dico
 
 def random_site(site,n): # Cree un tuple de n sites aléatoires avec l'id et le titre
+    data=np.loadtxt("aretes.txt")
+    degre_sortant=data[:,0]
     id=[]
     tab=[]
     with open(site,'r') as f:
         lines=f.readlines()
         for i in range(n):
             x=random.randint(0,len(lines))
+            while(x not in degre_sortant):
+                x=random.randint(0,len(lines))
             id.append(x)
             tab.append(lines[x])
     for i in range(n):
@@ -50,7 +54,7 @@ def cree_dict_vide(size): # Cree un dictionnaire vide avec comme cle un entier q
         dico[i]=set()
     return dico
 
-def categorisation(dico,site): # fonction qui permet de catégoriser les sites
+def categorisation_manuelle(dico,site): # fonction qui permet de catégoriser les sites de manière manuelle
     print("Les différentes catégories sont")
     print(dico)
     print("Rentrez l'entier associé")
@@ -64,30 +68,49 @@ def categorisation(dico,site): # fonction qui permet de catégoriser les sites
         dico_c[int(categorie)].add(i[0])
     return dico_c
 
-def liste(dico,dico_c): # fonction qui te donne la liste des sites qui correspondent à la catégorie qu'on veut avec leur id
-    categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
+def liste(dico,dico_c,categorie): # fonction qui te donne la liste des sites qui correspondent à la catégorie qu'on veut avec leur id
+    """categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
     while categorie not in dico:
             print("La catégorie n'est pas valide")
-            categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")
-    i=dico[categorie]
+            categorie=input("Quelle catégorie veux-tu avoir le page rank ? :")"""
     tab=[]
-    for j in dico_c[i]:
+    for j in dico_c[categorie]:
         tab.append(j)
     return tab
 
-rows,cols=reader_lists("aretes.txt")
+"""def categorisation_automatique(n):
+    rows,cols=reader_lists("aretes.txt")
+    dico_entier,dico_final=cree_dict()
+    site=random_site("id-titre.txt",n)
+    dico_categorie=categorisation_manuelle(dico_entier,site)
 
-dico2=cree_dict()
+    resultat=dict()
+    for cle in dico_categorie:
+        liste_perso=liste(dico_entier,dico_categorie,cle)
+        pr=pr_power_iteration_sparse(rows,cols,0.85,1e-10,True,liste_perso)
+        resultat[cle]=pr
+    
+    for i in range(len(pr)):
+        categorie_max=0
+        valeur_max=0
+        for cle in resultat:
+            if(resultat[cle][i]>valeur_max):
+                valeur_max=resultat[cle][i]
+                categorie_max=cle
+        for cle2 in dico_entier:
+            if categorie_max==dico_entier[cle2]:
+                categorie_str=cle2
+        dico_final[categorie_str].add(i)
 
-site=random_site("id-titre.txt",20)
-print(site)
+        with open("categorie.txt","w") as f:
+            for i in range (len(pr)):
+                for cle in dico_final:
+                    if i in dico_final[cle]:
+                        f.write(("%d %s\n")%(i,cle))
+    return dico_final
 
-dico3=categorisation(dico2,site)
-liste2=liste(dico2,dico3)
-print(liste2)
-pr=pr_power_iteration_sparse(rows,cols,0.85,1e-10,True,liste2)
-for i in range(len(pr)):
-    if(pr[i]>0):
-        input()
-        print(pr[i])
-
+dico_final=categorisation_automatique(2)
+for cle in dico_final:
+    print(cle)
+    print(dico_final[cle])
+    input()"""

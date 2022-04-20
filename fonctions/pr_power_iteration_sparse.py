@@ -10,7 +10,7 @@ def pr_power_iteration_sparse(rows,cols, alpha, epsilon,perso,liste=[]):
     P=Dinv.dot(A)
     
     #creation de y  
-    if perso:
+    if perso and len(liste)!=0:
         y=[0]*size
         for i in liste:
             y[i]=1

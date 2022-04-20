@@ -2,15 +2,8 @@
 # Pour compiler chmod 755 nomfichier
 
 #Test
-echo Hello les copains
 
-for ((i=1;i<20;i++))
-do
-    head -$(($(((RANDOM<<15)|RANDOM))% `wc -l < id-titre.txt` + 1)) id-titre.txt| tail -1
-done
-
-#python3 categorisation.py 
-
+python3 categorisation_automatique.py $1
 exit 0
 
 # commande1 | commande2 qui utilise le res1
