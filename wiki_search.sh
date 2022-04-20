@@ -39,7 +39,7 @@ if test -n "$1"; then
         nbId=$(echo "^[1-"$(echo $BestId|wc -w)"]$") #Pour savoir si le numéro tapé est entre 1 et 5
         
         while ! [ $(echo $num | grep $nbId| wc -l) -eq "1" ]; do
-            echo "Erreur : \"$num\" ne correspond à aucun titre" 
+            echo "Error : no matching title for \"$num\"" 
             read num
         done
         
@@ -48,18 +48,20 @@ if test -n "$1"; then
         title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' ./data/id-titre.txt) #Stocke le titre associé à la selection 
         
         python3 ./code/selecteur.py $title #On affiche le résumé de la selection
+        echo "--"
         echo "Press i for more information on wikipedia"
+        echo "Press q to quit"
         read info
         if [ $info = "i" ];then
             ./code/open_page $title
         fi
     else
-        echo "Erreur : «$1» ne retourne aucun résultat."
+        echo "Error : no result for «$1»."
     fi
 else
-    echo "Erreur : Aucun argument."
-    echo "wikiSearch attend une suggestion de titre pour la recherche."
-    echo "Par exemple, essayez «./wikiSearch chat»."
+    echo "Error : No argument."
+    echo "wikiSearch expects a title suggestion for the search."
+    echo "For example, try «./wikiSearch Hello»."
 fi
 
 #awk -v a=$1 'BEGIN{var=a} ($2 ~ (a)) {print $1,$2}' id-titre.txt
