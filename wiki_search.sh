@@ -48,6 +48,11 @@ if test -n "$1"; then
         title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' id-titre.txt) #Stocke le titre associé à la selection 
         
         python3 selecteur.py $title #On affiche le résumé de la selection
+        echo "Press i for more information on wikipedia"
+        read info
+        if [ $info = "i" ];then
+            ./open_page $title
+        fi
     else
         echo "Erreur : «$1» ne retourne aucun résultat."
     fi
