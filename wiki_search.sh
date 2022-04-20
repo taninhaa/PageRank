@@ -4,7 +4,7 @@
 ChercheID(){
     #Retourne les ID en lien avec le mot recherché
     ID=$(grep "\\b$1\\b" ./data/id-titre.txt | awk -F'\t' '{print $1}')
-    
+      
     #Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
     IDPagerank=()
     for id in $ID
