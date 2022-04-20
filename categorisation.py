@@ -27,8 +27,7 @@ def random_site(site,n): # Cree un tuple de n sites aléatoires avec l'id et le 
     with open(site,'r') as f:
         lines=f.readlines()
         for i in range(n):
-            x=random.randint(0,2000)
-            #x=random.randint(0,len(lines))
+            x=random.randint(0,len(lines))
             id.append(x)
             tab.append(lines[x])
     for i in range(n):
