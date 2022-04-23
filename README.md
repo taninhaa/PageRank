@@ -1,5 +1,4 @@
 # PageRank
 
-Ouvrir un dossier directement avec le terminal et taper la commande suivante:
-
+Create a folder and open it from the terminal. Then, use the command:
 git clone https://github.com/taninhaa/PageRank.git
