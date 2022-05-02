@@ -41,3 +41,9 @@ Then,
 
 We have the following result: 
 ![result1](https://user-images.githubusercontent.com/92987223/166291893-24bb9fc5-3a46-46bd-b9d0-7a528c0138dc.png)
+
+You have to choose what page you want to have more informations on among those proposed.  
+In our example, we want to know more about the page called _Hello World_ (the fourth page proposed) so we type the number associated `4`.  
+Here are the informations given for the page: 
+
+
