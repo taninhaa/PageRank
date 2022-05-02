@@ -49,3 +49,6 @@ Here are the informations given for the page:
 
 ![result2](https://user-images.githubusercontent.com/92987223/166294060-5c64b256-22b3-4dfc-a6fd-dfcd9721759f.png)
 
+You can press `i` to access to the wikipedia page on your browser or press `q` to quit. 
+
+Use the command `man wiki` to have more informations on how to use the command _wiki_.
