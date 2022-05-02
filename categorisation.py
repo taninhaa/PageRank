@@ -48,6 +48,22 @@ def random_site(site,n): # Cree un tuple de n sites aléatoires avec l'id et le 
         site.append((id[i],tab[i]))
     return site
 
+def creation_dict_titre(site):
+    dict_final=dict()
+    with open(site,'r') as f:
+        lines=f.readlines()
+        for i in range(len(lines)):
+            tab=lines[i]
+            res=''
+            condition=0
+            for j in tab:
+                if(j=='\t'):
+                    condition=1
+                if(j!='\n'  and j!='\t' and condition==1):
+                    res= res + j
+            dict_final[res]=''
+    return dict_final
+
 def cree_dict_vide(size): # Cree un dictionnaire vide avec comme cle un entier qui represente la catégorie
     dico=dict()
     for i in range(size):  
