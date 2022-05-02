@@ -29,7 +29,7 @@ or
 `chmod +x wiki_search.sh`
 
 Then, use:
-`./wiki_search "word"`. Here, the "word" is the one you decide to search. 
+`./wiki_search "word"`. Here, "word" is the word you decide to search. 
 
  ##### Let's make an example:
  We decide to search informations on the word "Hello". 
