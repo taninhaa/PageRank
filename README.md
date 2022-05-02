@@ -40,3 +40,4 @@ Then,
 `./wiki_search Hello`
 
 We have the following result: 
+![result1](https://user-images.githubusercontent.com/92987223/166291893-24bb9fc5-3a46-46bd-b9d0-7a528c0138dc.png)
