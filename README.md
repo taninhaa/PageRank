@@ -16,28 +16,31 @@ If you want to see our work and use our tool on your computer, follow the instru
 
 `git clone https://github.com/taninhaa/PageRank.git`
 
-Once you have our project on your local repository, you can use our command **_wiki_**. 
+Once you have our project on your local repository, you can use our command **_wikisearch_**. 
 
-#### Access to the command _wiki_
+#### Access to the command _wikisearch_
 
 Open a terminal on you computer by using `Ctrl + Alt + T`. 
 Change the directory until you get to the PageRank on your computer by using the command `cd`.  
-You can now acess to the _wiki_ command by following:
+You can now acess to the _wikisearch_ command by following:
 
-`chmod 755 wiki_search.sh`
+`chmod 755 wikisearch`
 or  
-`chmod +x wiki_search.sh`
+`chmod +x wikisearch`
 
-Then, use:
-`./wiki_search "word"`. Here, "word" is the word you decide to search. 
+To make this command global (usuable in all directory):
+`sudo cp ./wikisearch ~/../../usr/bin/wikisearch`
+
+For more information, you can install ower man page with:
+`sudo cp ./man ~/../../usr/share/man/man1/wikisearch.1`
+
+Finally you can use:
+`wikisearch [-p|-perso] <argument>`. Here, argument is the word you decide to search. 
 
  ##### Let's make an example:
  We decide to search informations on the word "Hello". 
- 
- `chmod 755 wiki_search.sh` or `chmod +x wiki_search.sh`
- 
-Then, 
-`./wiki_search Hello`
+
+`wikisearch Hello`
 
 We have the following result: 
 
@@ -51,4 +54,7 @@ Here are the informations given for the page:
 
 You can press `i` to access to the wikipedia page on your browser or press `q` to quit. 
 
-Use the command `man wiki` to have more informations on how to use the command _wiki_.
+If you want personalised suggestions, you can type:
+`wikisearch -perso Hello`
+
+Use the command `man wiki` to have more informations on how to use the command _wikisearch_.
