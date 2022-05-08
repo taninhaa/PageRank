@@ -1,9 +1,6 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import wikipediaapi
 import scipy.sparse as sps
 import scipy.sparse.linalg as spl
-import seaborn
 import csv
 
 #Fonction qui va lire un fichier et qui donne deux tableaux avec les lignes et les colonnes
@@ -11,7 +8,7 @@ def reader_lists(fileName):
 	with open(fileName, 'r') as csvfile:
 		rows = []
 		cols = []
-		edgelist = csv.reader(csvfile, delimiter=' ')
+		edgelist = csv.reader(csvfile, delimiter='\t')
 		for line in edgelist:
 			rows.append( int(line[0]) )
 			cols.append( int(line[1]) )

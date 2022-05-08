@@ -58,17 +58,29 @@ DefaultPageRank(){
     fi
 }
 
+PersonalisedPagerank(){
+    ID=$(grep "\\b$1\\b" ./data/id-titre.txt | awk -F'\t' '{print $1}')
+
+    if test -n "$ID"; then  
+        python3 ./code/api_pagerank_perso.py $ID
+    else
+         echo "Error : no result for «$1»."
+    fi
+}
 
 
 #Si le titre $1 n'est pas vide on cherche les ID
 if test -n "$1"; then
-    if [ "$1" = "-perso" ]; then
+    if [ "$1" = "-perso" ] || [ "$1" = "-p" ]; then
+
         if test -n "$2"; then
-            echo "pagerank perso"
+            echo "Personalised Pagerank ..."
+            PersonalisedPagerank $2
         else
             echo "Error : One argument is missing."
             echo "Try : ./wikiSearch [-perso] Hello"
         fi
+
     else
         DefaultPageRank $1
     fi
