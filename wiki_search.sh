@@ -14,10 +14,8 @@ ChercheID(){
 
 }
 
-#Si le titre $1 n'est pas vide on cherche les ID
-if test -n "$1"; then
+DefaultPageRank(){
     ChercheID $1
-
     #Si le titre retourne au moins un ID, on affiche le(s) meilleur(s)
     if test -n "$ID"; then  
         #Les ID sont triés par valeur du Pagerank et on retourne les 5 meilleurs
@@ -58,10 +56,27 @@ if test -n "$1"; then
     else
         echo "Error : no result for «$1»."
     fi
+}
+
+
+
+#Si le titre $1 n'est pas vide on cherche les ID
+if test -n "$1"; then
+    if [ "$1" = "-perso" ]; then
+        if test -n "$2"; then
+            echo "pagerank perso"
+        else
+            echo "Error : One argument is missing."
+            echo "Try : ./wikiSearch [-perso] Hello"
+        fi
+    else
+        DefaultPageRank $1
+    fi
+    
 else
     echo "Error : No argument."
     echo "wikiSearch expects a title suggestion for the search."
-    echo "For example, try «./wikiSearch Hello»."
+    echo "For example, try «./wikiSearch [-perso] Hello»."
 fi
 
 #awk -v a=$1 'BEGIN{var=a} ($2 ~ (a)) {print $1,$2}' id-titre.txt
