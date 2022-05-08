@@ -3,13 +3,13 @@
 
 ChercheID(){
     #Retourne les ID en lien avec le mot recherché
-    ID=$(grep "\\b$1\\b" ./data/id-titre.txt | awk -F'\t' '{print $1}')
+    ID=$(grep "\\b$1\\b" ~/../../usr/share/wikisearch/data/id-titre.txt | awk -F'\t' '{print $1}')
       
     #Retourne une liste avec (id1,valueid1,id2,valueid2, ...)
     IDPagerank=()
     for id in $ID
     do
-        IDPagerank+=($(grep "^$id\\b" ./data/pagerank.txt))
+        IDPagerank+=($(grep "^$id\\b" ~/../../usr/share/wikisearch/data/pagerank.txt))
     done
 
 }
@@ -20,7 +20,7 @@ PrintSelect(){
     for id in $*
     do
         echo -n "$i >> " #Affiche le numéro 
-        awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' ./data/id-titre.txt #Affiche le titre pour chaque ID
+        awk -v a=$id -F'\t' 'BEGIN{a++} NR == a {print $2}' ~/../../usr/share/wikisearch/data/id-titre.txt #Affiche le titre pour chaque ID
         i=$((i+1))
     done
 
@@ -37,15 +37,15 @@ PrintSelect(){
     
     selection=$(echo $* | awk -v a=$num '{print $a}') #Prend la selection de l'utilisateur (ID)
     
-    title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' ./data/id-titre.txt) #Stocke le titre associé à la selection 
+    title=$(awk -v a=$selection -F'\t' 'BEGIN{a++} NR == a {print $0}' ~/../../usr/share/wikisearch/data/id-titre.txt) #Stocke le titre associé à la selection 
     
-    python3 ./code/selecteur.py $title #On affiche le résumé de la selection
+    python3 ~/../../usr/share/wikisearch/code/selecteur.py $title #On affiche le résumé de la selection
     echo "--"
     echo "Press i for more information on wikipedia"
     echo "Press q to quit"
     read info
     if [ $info = "i" ];then
-        ./code/open_page $title
+        ~/../../usr/share/wikisearch/code/open_page $title
     fi
 }
 
@@ -54,7 +54,7 @@ DefaultPageRank(){
     #Si le titre retourne au moins un ID, on affiche le(s) meilleur(s)
     if test -n "$ID"; then  
         #Les ID sont triés par valeur du Pagerank et on retourne les 5 meilleurs
-        BestId=$(./code/triPagerank ${IDPagerank[*]})
+        BestId=$(~/../../usr/share/wikisearch/code/triPagerank ${IDPagerank[*]})
         #Affiche les 5 meilleurs et permet la sélection d'un d'entre eux pour un résumé
         PrintSelect $BestId
         
@@ -64,11 +64,11 @@ DefaultPageRank(){
 }
 
 PersonalisedPagerank(){
-    ID=$(grep "\\b$1\\b" ./data/id-titre.txt | awk -F'\t' '{print $1}')
+    ID=$(grep "\\b$1\\b" ~/../../usr/share/wikisearch/data/id-titre.txt | awk -F'\t' '{print $1}')
 
     if test -n "$ID"; then  
         #Calcule le pagerank perso et retourne les 5 meilleurs ID
-        BestId=$(python3 ./code/api_pagerank_perso.py $ID)
+        BestId=$(python3 ~/../../usr/share/wikisearch/code/api_pagerank_perso.py $ID)
         #Affiche les 5 meilleurs et permet la sélection d'un d'entre eux pour un résumé
         PrintSelect $BestId
         
@@ -88,7 +88,7 @@ if test -n "$1"; then
             PersonalisedPagerank $2
         else
             echo "Error : One argument is missing."
-            echo "Try : ./wikiSearch [-perso|-p] Hello"
+            echo "Try : wikisearch [-perso|-p] Hello"
         fi
 
     else
@@ -97,8 +97,8 @@ if test -n "$1"; then
     
 else
     echo "Error : No argument."
-    echo "wikiSearch expects a title suggestion for the search."
-    echo "For example, try «./wikiSearch [-perso|-p] Hello»."
+    echo "wikisearch expects a title suggestion for the search."
+    echo "For example, try «wikisearch [-perso|-p] Hello»."
 fi
 
 #awk -v a=$1 'BEGIN{var=a} ($2 ~ (a)) {print $1,$2}' id-titre.txt

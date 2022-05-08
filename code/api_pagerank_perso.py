@@ -1,4 +1,5 @@
 import sys
+sys.path.append("~/../../usr/share/wikipedia")
 from graphe_pagerank import reader_lists,pagerank_sparse_perso
 
 #On recupère les ID
@@ -7,7 +8,7 @@ for ID in sys.argv[1:]: #sys.argv[0] == './code/api_pagerank_perso.py'
     liste_ID.append(int(ID))
 
 #On recupère l'ensemble des arêtes sous forme matricielle
-rows,cols = reader_lists("./data/aretes.txt")
+rows,cols = reader_lists("/usr/share/wikisearch/data/aretes.txt")
 alpha = 0.85
 eps = 1e-10
 #Calcule du pagerank personnalisé qui prend en compte les ID personnalisés
