@@ -18,7 +18,7 @@ If you want to see our work and use our tool on your computer, follow the instru
 
 Once you have our project on your local repository, you can use our command **_wikisearch_**. 
 
-#### Access to the command _wiki\_search_
+#### Access to the command _wikisearch_
 
 Open a terminal on you computer by using `Ctrl + Alt + T`. 
 Change the directory until you get to the PageRank on your computer by using the command `cd`.  
