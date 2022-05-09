@@ -38,7 +38,7 @@ To make this command global (usuable in all directory):
 
 `sudo cp ./data/* ~/../../usr/share/wikisearch/data/`
 
-For more information, you can install ower man page with:
+For more information, you can install our man page with:
 `sudo cp ./man ~/../../usr/share/man/man1/wikisearch.1`
 
 Finally you can use:
