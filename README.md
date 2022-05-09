@@ -31,8 +31,11 @@ or
 To make this command global (usuable in all directory):
 
 `sudo cp ./wikisearch ~/../../usr/bin/wikisearch` 
+
 `sudo mkdir -p ~/../../usr/share/wikisearch/code ~/../../usr/share/wikisearch/data`
+
 `sudo cp ./code/* ~/../../usr/share/wikisearch/code/` 
+
 `sudo cp ./data/* ~/../../usr/share/wikisearch/data/`
 
 For more information, you can install ower man page with:
