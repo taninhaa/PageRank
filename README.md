@@ -29,9 +29,16 @@ or
 `chmod +x wikisearch`
 
 To make this command global (usuable in all directory):
-`sudo cp ./wikisearch ~/../../usr/bin/wikisearch && sudo mkdir -p ~/../../usr/share/wikisearch/code ~/../../usr/share/wikisearch/data && sudo cp ./code/* ~/../../usr/share/wikisearch/code/ && sudo cp ./data/* ~/../../usr/share/wikisearch/data/`
 
-For more information, you can install ower man page with:
+`sudo cp ./wikisearch ~/../../usr/bin/wikisearch` 
+
+`sudo mkdir -p ~/../../usr/share/wikisearch/code ~/../../usr/share/wikisearch/data`
+
+`sudo cp ./code/* ~/../../usr/share/wikisearch/code/` 
+
+`sudo cp ./data/* ~/../../usr/share/wikisearch/data/`
+
+For more information, you can install our man page with:
 `sudo cp ./man ~/../../usr/share/man/man1/wikisearch.1`
 
 Finally you can use:
