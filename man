@@ -62,7 +62,7 @@ Wikipedia pages may not exist in all language.
 Also the database used is incomplete and not actualised since march 2022.
 
 .SH AUTHOR
-Written by Bastien Guillemare and Tania Mendes Dias.
+Written by Bastien Guillemare, Tania Mendes Dias, Paula Burbano and Kevin Chen.
 .br
 This is free software: you are free to change and redistribute it.
 .br
