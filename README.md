@@ -1,7 +1,7 @@
 # PageRank
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-
+[![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
 #### Introduction 
 Our project was based on calculating the PageRank of Wikipedia pages in order to create a usefull tool that everyone can use.  
