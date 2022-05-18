@@ -22,7 +22,6 @@ def categorisation_automatique(n):
     dico_entier=cree_dict()
     site=random_site("id-titre.txt",n)
     dico_categorie=categorisation_manuelle(dico_entier,site)
-
     dico_final=creation_dict_titre("id-titre.txt")
     resultat=dict()
     for cle in dico_categorie:
@@ -51,4 +50,4 @@ def categorisation_automatique(n):
     file.close()
     return dico_final
 
-dico=categorisation_automatique(5)
+dico=categorisation_automatique(10)
