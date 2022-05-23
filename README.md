@@ -4,10 +4,10 @@
 [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
 
 #### Introduction 
-Our project was based on calculating the PageRank of Wikipedia pages in order to create a usefull tool that everyone can use.  
-Actually, we have created a tool you can use on **your terminal** to search informations on a word.  
-In this repository gitHub, you have access to **our codes to calculate the _PageRank_** with different methods.  
-You also have access to the **bash script** we have made for our tool as well as **a report** we have made in french to explain our approach.
+Our project is based on computing the PageRank of the Wikipedia graph in order to create a useful tool that suits many people's workflow.  
+Indeed, we have created a tool that you can use on **your terminal** to perform a search given a keyword.  
+This repository contains **our codes to approximate the _PageRank_ on a very large graph** with different methods.  
+We also include a **bash script** that we made for our tool as well as **a report** we have made in French to explain our approach.
 
 If you want to see our work and use our tool on your computer, follow the instructions below: 
 
